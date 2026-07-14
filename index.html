@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMERICANCOOL — Electrodomésticos en Honduras</title>
+  <meta name="description" content="AMERICANCOOL: aires acondicionados, refrigeradores, congeladores, estufas y vitrinas. Calidad y frescura para tu hogar y negocio. Disponible en Honduras.">
+  <meta property="og:title" content="AMERICANCOOL — Electrodomésticos en Honduras">
+  <meta property="og:description" content="Aires acondicionados, refrigeradores, congeladores, estufas y vitrinas AMERICANCOOL. Escríbenos por WhatsApp para más información.">
+  <meta property="og:image" content="assets/banners/variado-600x300.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__interno">
+      <a class="logo" href="index.html" aria-label="AMERICANCOOL, inicio">
+        <span class="logo--american">AMERICAN</span><span class="logo--cool">COOL</span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html" class="activo">Inicio</a>
+        <a href="catalogo.html">Productos</a>
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a class="btn btn--whatsapp" data-whatsapp-general href="#">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="heroe">
+    <div class="contenedor heroe__interno">
+      <div>
+        <p class="heroe__lema">Calidad 100% americana, ¡al alcance de todos!</p>
+        <h1>Frescura y calidad americana para tu hogar y negocio</h1>
+        <p>Conoce nuestra línea de aires acondicionados, refrigeradores, congeladores, estufas y vitrinas AMERICANCOOL, disponibles en Honduras.</p>
+        <div class="heroe__acciones">
+          <a class="btn btn--contorno" href="catalogo.html">Conocer los productos</a>
+          <a class="btn btn--whatsapp" data-whatsapp-general href="#">Más información</a>
+        </div>
+      </div>
+      <div class="carrusel" aria-label="Banners promocionales">
+        <div class="carrusel__pista">
+          <img src="assets/banners/variado-600x300.png" alt="Productos AMERICANCOOL en oferta">
+          <img src="assets/banners/vitrina-600x300.png" alt="Vitrinas AMERICANCOOL">
+          <img src="assets/banners/hn-300x600.png" alt="AMERICANCOOL disponible en Honduras" loading="lazy">
+        </div>
+        <div class="carrusel__puntos"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ventajas" aria-label="Por qué elegir AMERICANCOOL">
+    <div class="contenedor ventajas__rejilla">
+      <div class="ventaja"><span aria-hidden="true">🇺🇸</span><h3>Calidad americana</h3><p>Equipos confiables, fabricados con estándares de calidad 100% americana.</p></div>
+      <div class="ventaja"><span aria-hidden="true">🏠</span><h3>Hogar y negocio</h3><p>Soluciones de clima, cocina y refrigeración para casas y comercios.</p></div>
+      <div class="ventaja"><span aria-hidden="true">📍</span><h3>Disponible en Honduras</h3><p>Encuentra nuestros productos en los puntos de venta del país.</p></div>
+      <div class="ventaja"><span aria-hidden="true">💬</span><h3>Atención personalizada</h3><p>Resolvemos tus dudas por WhatsApp, sin compromiso.</p></div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--gris" id="categorias">
+    <div class="contenedor">
+      <h2 class="seccion__titulo">Nuestras categorías</h2>
+      <p class="seccion__sub">Encuentra el equipo perfecto para tu casa o tu negocio</p>
+      <div class="categorias" data-categorias></div>
+    </div>
+  </section>
+
+  <section class="seccion" id="destacados">
+    <div class="contenedor">
+      <h2 class="seccion__titulo">Productos destacados</h2>
+      <p class="seccion__sub">Conoce nuestros equipos; escríbenos por WhatsApp si quieres más información</p>
+      <div class="rejilla" data-productos data-limite="8"></div>
+      <p style="text-align:center; margin-top:2rem;">
+        <a class="btn btn--primario" href="catalogo.html">Ver todo el catálogo</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="seccion" id="nosotros">
+    <div class="contenedor nosotros">
+      <h2 class="seccion__titulo">La marca AMERICANCOOL</h2>
+      <p>AMERICANCOOL es una marca de electrodomésticos dedicada a llevar frescura, comodidad y rendimiento a los hogares y negocios de Honduras. Nuestra línea abarca desde aires acondicionados y refrigeradores para la familia, hasta congeladores y vitrinas refrigerantes diseñados para el comercio.</p>
+      <p>Cada equipo está fabricado con estándares de calidad 100% americana, pensado para el clima y las necesidades de nuestra región, y respaldado por un equipo que te atiende de forma personalizada.</p>
+    </div>
+  </section>
+
+  <section class="franja">
+    <div class="contenedor">
+      <img src="assets/banners/hn-728x90.png" alt="AMERICANCOOL disponible en Honduras" loading="lazy">
+      <h2>Disponible en Honduras</h2>
+      <p>Pregunta por nuestros puntos de venta y disponibilidad en tu ciudad.</p>
+    </div>
+  </section>
+
+  <footer class="pie" id="contacto">
+    <div class="contenedor">
+      <div class="pie__rejilla">
+        <div>
+          <h4>AMERICANCOOL</h4>
+          <p>Electrodomésticos de calidad: enfriamiento, cocina y refrigeración comercial para hogares y negocios.</p>
+        </div>
+        <div>
+          <h4>Catálogo</h4>
+          <a href="catalogo.html#aires">Aires Acondicionados</a>
+          <a href="catalogo.html#refrigeradores">Refrigeradores</a>
+          <a href="catalogo.html#congeladores">Congeladores</a>
+          <a href="catalogo.html#estufas">Estufas</a>
+          <a href="catalogo.html#vitrinas">Vitrinas</a>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <a data-whatsapp-general href="#">💬 Escríbenos por WhatsApp</a>
+          <p>Honduras</p>
+        </div>
+      </div>
+      <p class="pie__legal">© 2026 AMERICANCOOL. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-flotante" data-whatsapp-general href="#" aria-label="Chatear por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2.7C8.7 2.7 2.8 8.6 2.8 15.9c0 2.3.6 4.6 1.8 6.6L2.7 29.3l7-1.8c1.9 1 4.1 1.6 6.3 1.6 7.3 0 13.2-5.9 13.2-13.2S23.3 2.7 16 2.7zm0 24.1c-2 0-3.9-.5-5.6-1.5l-.4-.2-4.2 1.1 1.1-4.1-.3-.4c-1.1-1.8-1.7-3.8-1.7-5.8C4.9 9.8 9.9 4.9 16 4.9s11.1 5 11.1 11.1S22.1 26.8 16 26.8zm6.1-8.3c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6-.1-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.7 5.8 5.2.8.4 1.4.6 1.9.7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.4z"/></svg>
+  </a>
+
+  <div class="visor" role="dialog" aria-modal="true" aria-label="Fotos del producto">
+    <div class="visor__caja">
+      <button class="visor__cerrar" aria-label="Cerrar">✕</button>
+      <div class="visor__imagen">
+        <button class="visor__flecha visor__flecha--izq" aria-label="Foto anterior">‹</button>
+        <img src="" alt="Foto del producto">
+        <button class="visor__flecha visor__flecha--der" aria-label="Foto siguiente">›</button>
+      </div>
+      <div class="visor__miniaturas"></div>
+      <div class="visor__info">
+        <h3></h3>
+        <p class="sku"></p>
+        <a class="btn btn--whatsapp" href="#" target="_blank" rel="noopener">Más información</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
