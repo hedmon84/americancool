@@ -9,15 +9,15 @@ PRODUCTS = ROOT / "assets" / "products"
 DATA = ROOT / "data" / "products.json"
 
 CATEGORIAS = [
-    {"id": "aires", "nombre": "Aires Acondicionados", "icono": "❄️",
+    {"id": "aires", "nombre": "Aires Acondicionados",
      "descripcion": "Equipos split de 12,000 a 24,000 BTU con gas ecológico R410 y eficiencia SEER 13."},
-    {"id": "refrigeradores", "nombre": "Refrigeradores", "icono": "🧊",
+    {"id": "refrigeradores", "nombre": "Refrigeradores",
      "descripcion": "Refrigeradores side by side sin escarcha, con dispensador de agua."},
-    {"id": "congeladores", "nombre": "Congeladores", "icono": "🥶",
+    {"id": "congeladores", "nombre": "Congeladores",
      "descripcion": "Congeladores horizontales de 10 a 26 pies, de una y dos puertas, doble y triple función."},
-    {"id": "estufas", "nombre": "Estufas", "icono": "🔥",
+    {"id": "estufas", "nombre": "Estufas",
      "descripcion": "Estufas de gas de 30\" con 6 quemadores de hierro colado y superficie de acero inoxidable."},
-    {"id": "vitrinas", "nombre": "Vitrinas", "icono": "🥤",
+    {"id": "vitrinas", "nombre": "Vitrinas",
      "descripcion": "Vitrinas refrigerantes de 10 a 40 pies para comercios, con luz LED y termómetro."},
 ]
 

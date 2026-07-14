@@ -124,7 +124,7 @@ a { color: var(--azul); text-decoration: none; }
 .ventajas { background: var(--blanco); padding: 2.4rem 0; border-bottom: 1px solid var(--gris-fondo); }
 .ventajas__rejilla { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1.6rem; }
 .ventaja { text-align: center; }
-.ventaja span { font-size: 2rem; display: block; margin-bottom: 0.4rem; }
+.ventaja svg { width: 42px; height: 42px; color: var(--azul); display: block; margin: 0 auto 0.6rem; }
 .ventaja h3 { color: var(--azul-oscuro); font-size: 1rem; margin-bottom: 0.3rem; }
 .ventaja p { color: var(--gris-texto); font-size: 0.88rem; }
 
@@ -140,7 +140,9 @@ a { color: var(--azul); text-decoration: none; }
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .categoria:hover { transform: translateY(-4px); box-shadow: var(--sombra-hover); }
-.categoria > span:first-child { display: block; font-size: 2rem; margin-bottom: 0.4rem; }
+.categoria__icono { display: block; margin-bottom: 0.6rem; }
+.categoria__icono svg { width: 44px; height: 44px; color: var(--azul); margin: 0 auto; display: block; }
+.categoria:hover .categoria__icono svg { color: var(--celeste); }
 .categoria__descripcion { font-weight: 400; font-size: 0.85rem; color: var(--gris-texto); margin: 0.5rem 0 0.7rem; }
 .categoria__ver { display: block; font-size: 0.85rem; font-weight: 700; color: var(--celeste); }
 
@@ -164,8 +166,10 @@ a { color: var(--azul); text-decoration: none; }
 .tarjeta__imagen img { width: 100%; height: 100%; object-fit: contain; padding: 0.8rem; }
 .tarjeta__fotos {
   position: absolute; right: 10px; bottom: 10px; background: rgba(7,42,85,0.75);
-  color: var(--blanco); font-size: 0.75rem; font-weight: 700; padding: 0.15rem 0.6rem; border-radius: 999px;
+  color: var(--blanco); font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 999px;
+  display: inline-flex; align-items: center; gap: 0.3rem;
 }
+.tarjeta__fotos svg { width: 13px; height: 13px; }
 .tarjeta__cuerpo { padding: 1rem 1.1rem 1.2rem; display: flex; flex-direction: column; gap: 0.55rem; flex: 1; }
 .tarjeta__categoria { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--celeste); }
 .tarjeta__nombre { font-size: 1rem; color: var(--texto); line-height: 1.3; }
