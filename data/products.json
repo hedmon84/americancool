@@ -34,7 +34,29 @@
       "descripcion": "Gas R410 · SEER 13. Dimensiones: 29 × 85 × 19 cm.",
       "imagenes": [
         "assets/products/aires/L02A00132/01.png"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "Aire acondicionado tipo mini split de 18,000 BTU, ideal para salas, comercios y habitaciones amplias de hasta 40 m². Funciona con gas ecológico R410A y eficiencia SEER 13, para un enfriamiento potente con menor consumo de energía. Incluye control remoto y filtro lavable de fácil mantenimiento.",
+        "especificaciones": [
+          { "etiqueta": "Capacidad", "valor": "18,000 BTU" },
+          { "etiqueta": "Área recomendada", "valor": "Hasta 40 m²" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "220 V / 60 Hz" },
+          { "etiqueta": "Refrigerante", "valor": "R410A ecológico" },
+          { "etiqueta": "Eficiencia", "valor": "SEER 13" },
+          { "etiqueta": "Dimensiones evaporadora (Alto × Ancho × Prof.)", "valor": "29 × 85 × 19 cm" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Tipo de equipo", "valor": "Mini split (evaporadora + condensadora)" },
+          { "etiqueta": "Control remoto", "valor": "Si" },
+          { "etiqueta": "Modo frío", "valor": "Si" },
+          { "etiqueta": "Modo deshumidificador", "valor": "Si" },
+          { "etiqueta": "Modo ventilador", "valor": "Si" },
+          { "etiqueta": "Filtro lavable", "valor": "Si" },
+          { "etiqueta": "Aletas de flujo ajustable", "valor": "Si" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "220 V / 60 Hz" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02A00134",
@@ -43,7 +65,29 @@
       "descripcion": "Gas R410 · SEER 13. Dimensiones: 30.5 × 95 × 22 cm.",
       "imagenes": [
         "assets/products/aires/L02A00134/01.png"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "El equipo más potente de la línea: mini split de 24,000 BTU para espacios grandes de hasta 55 m², como salones, oficinas y locales comerciales. Con gas ecológico R410A y eficiencia SEER 13, enfría rápido manteniendo el consumo bajo control. Incluye control remoto y filtro lavable.",
+        "especificaciones": [
+          { "etiqueta": "Capacidad", "valor": "24,000 BTU" },
+          { "etiqueta": "Área recomendada", "valor": "Hasta 55 m²" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "220 V / 60 Hz" },
+          { "etiqueta": "Refrigerante", "valor": "R410A ecológico" },
+          { "etiqueta": "Eficiencia", "valor": "SEER 13" },
+          { "etiqueta": "Dimensiones evaporadora (Alto × Ancho × Prof.)", "valor": "30.5 × 95 × 22 cm" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Tipo de equipo", "valor": "Mini split (evaporadora + condensadora)" },
+          { "etiqueta": "Control remoto", "valor": "Si" },
+          { "etiqueta": "Modo frío", "valor": "Si" },
+          { "etiqueta": "Modo deshumidificador", "valor": "Si" },
+          { "etiqueta": "Modo ventilador", "valor": "Si" },
+          { "etiqueta": "Filtro lavable", "valor": "Si" },
+          { "etiqueta": "Aletas de flujo ajustable", "valor": "Si" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "220 V / 60 Hz" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02A00136",
@@ -52,7 +96,29 @@
       "descripcion": "Gas R410 · SEER 13. Dimensiones: 28 × 79.5 × 17.5 cm.",
       "imagenes": [
         "assets/products/aires/L02A00136/01.png"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "Mini split de 12,000 BTU, perfecto para dormitorios y espacios de hasta 25 m². Con gas ecológico R410A y eficiencia SEER 13, ofrece un clima fresco y silencioso con bajo consumo eléctrico. Incluye control remoto y filtro lavable de fácil mantenimiento.",
+        "especificaciones": [
+          { "etiqueta": "Capacidad", "valor": "12,000 BTU" },
+          { "etiqueta": "Área recomendada", "valor": "Hasta 25 m²" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "220 V / 60 Hz" },
+          { "etiqueta": "Refrigerante", "valor": "R410A ecológico" },
+          { "etiqueta": "Eficiencia", "valor": "SEER 13" },
+          { "etiqueta": "Dimensiones evaporadora (Alto × Ancho × Prof.)", "valor": "28 × 79.5 × 17.5 cm" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Tipo de equipo", "valor": "Mini split (evaporadora + condensadora)" },
+          { "etiqueta": "Control remoto", "valor": "Si" },
+          { "etiqueta": "Modo frío", "valor": "Si" },
+          { "etiqueta": "Modo deshumidificador", "valor": "Si" },
+          { "etiqueta": "Modo ventilador", "valor": "Si" },
+          { "etiqueta": "Filtro lavable", "valor": "Si" },
+          { "etiqueta": "Aletas de flujo ajustable", "valor": "Si" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "220 V / 60 Hz" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02R00411",
@@ -63,7 +129,29 @@
         "assets/products/refrigeradores/L02R00411/01.png",
         "assets/products/refrigeradores/L02R00411/02.png",
         "assets/products/refrigeradores/L02R00411/03.png"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "Refrigerador side by side de 16 pies³ (modelo ARSS1530SS) con congelador y refrigerador lado a lado, tecnología sin escarcha (no frost) y dispensador de agua en la puerta. Su acabado en acero inoxidable le da un toque moderno a cualquier cocina, y sus parrillas ajustables permiten organizar el espacio a tu gusto.",
+        "especificaciones": [
+          { "etiqueta": "Tamaño", "valor": "16 pies³ / 453 litros" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Puertas", "valor": "2 (side by side)" },
+          { "etiqueta": "Sistema de enfriamiento", "valor": "No frost (sin escarcha)" },
+          { "etiqueta": "Dispensador de agua", "valor": "Si" },
+          { "etiqueta": "Acabado", "valor": "Acero inoxidable" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Modelo", "valor": "ARSS1530SS" },
+          { "etiqueta": "Cuenta con dispensador de agua", "valor": "Si" },
+          { "etiqueta": "Iluminación interna", "valor": "LED" },
+          { "etiqueta": "Parrillas ajustables", "valor": "Si, de vidrio templado" },
+          { "etiqueta": "Compartimientos en puerta", "valor": "Si" },
+          { "etiqueta": "Cajón para frutas y verduras", "valor": "Si" },
+          { "etiqueta": "Control de temperatura", "valor": "Perilla manual" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02FR00123",
@@ -74,7 +162,30 @@
         "assets/products/congeladores/L02FR00123/01.jpg",
         "assets/products/congeladores/L02FR00123/02.png",
         "assets/products/congeladores/L02FR00123/03.png"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "El congelador más grande de la línea: 26 pies³ de capacidad con dos puertas independientes, ideal para negocios, pulperías y familias grandes. Su sistema de triple función permite usarlo como congelador, enfriador o conservador, y las paredes tipo frozen wall congelan de manera uniforme en todo el interior.",
+        "especificaciones": [
+          { "etiqueta": "Tamaño", "valor": "736 litros / 26 pies³" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)", "valor": "85 × 194 × 75 cm" },
+          { "etiqueta": "Canastas de alambrón", "valor": "3" },
+          { "etiqueta": "Rango de Temperatura", "valor": "10 °C a -18 °C" },
+          { "etiqueta": "Consumo Energético cada 24 hrs", "valor": "2.5 kW" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Cuenta con cerradura", "valor": "Si" },
+          { "etiqueta": "Cuenta con drenaje interno", "valor": "Si" },
+          { "etiqueta": "Tipo de canastas", "valor": "Alambrón anticorrosivo" },
+          { "etiqueta": "Funciones", "valor": "Triple: congela, enfría y conserva" },
+          { "etiqueta": "Tipo de refrigerante", "valor": "R134a" },
+          { "etiqueta": "Control de temperatura", "valor": "Perilla manual" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Frozen wall", "valor": "Si" },
+          { "etiqueta": "Total Cool", "valor": "Si" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02FR00314",
@@ -84,7 +195,30 @@
       "imagenes": [
         "assets/products/congeladores/L02FR00314/01.png",
         "assets/products/congeladores/L02FR00314/02.png"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "Congelador horizontal de 18 pies³ con dos puertas, pensado para hogares y negocios que necesitan buen espacio de almacenamiento. Su doble función permite alternar entre congelar y enfriar según la temporada, con paredes frozen wall que distribuyen el frío de forma pareja.",
+        "especificaciones": [
+          { "etiqueta": "Tamaño", "valor": "509 litros / 18 pies³" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Puertas", "valor": "2" },
+          { "etiqueta": "Canastas de alambrón", "valor": "2" },
+          { "etiqueta": "Rango de Temperatura", "valor": "10 °C a -18 °C" },
+          { "etiqueta": "Consumo Energético cada 24 hrs", "valor": "2.0 kW" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Cuenta con cerradura", "valor": "Si" },
+          { "etiqueta": "Cuenta con drenaje interno", "valor": "Si" },
+          { "etiqueta": "Tipo de canastas", "valor": "Alambrón anticorrosivo" },
+          { "etiqueta": "Funciones", "valor": "Doble: congela y enfría" },
+          { "etiqueta": "Tipo de refrigerante", "valor": "R134a" },
+          { "etiqueta": "Control de temperatura", "valor": "Perilla manual" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Frozen wall", "valor": "Si" },
+          { "etiqueta": "Total Cool", "valor": "Si" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02FR00315",
@@ -94,7 +228,30 @@
       "imagenes": [
         "assets/products/congeladores/L02FR00315/01.png",
         "assets/products/congeladores/L02FR00315/02.png"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "Congelador horizontal de 21 pies³ con dos puertas y sistema de triple función: congela, enfría o conserva según lo que necesites. Ideal para negocios de alimentos y hogares grandes. Incluye cerradura de seguridad, drenaje interno y canastas de alambrón anticorrosivo.",
+        "especificaciones": [
+          { "etiqueta": "Tamaño", "valor": "594 litros / 21 pies³" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)", "valor": "80 × 179 × 68 cm" },
+          { "etiqueta": "Canastas de alambrón", "valor": "2" },
+          { "etiqueta": "Rango de Temperatura", "valor": "10 °C a -18 °C" },
+          { "etiqueta": "Consumo Energético cada 24 hrs", "valor": "2.2 kW" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Cuenta con cerradura", "valor": "Si" },
+          { "etiqueta": "Cuenta con drenaje interno", "valor": "Si" },
+          { "etiqueta": "Tipo de canastas", "valor": "Alambrón anticorrosivo" },
+          { "etiqueta": "Funciones", "valor": "Triple: congela, enfría y conserva" },
+          { "etiqueta": "Tipo de refrigerante", "valor": "R134a" },
+          { "etiqueta": "Control de temperatura", "valor": "Perilla manual" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Frozen wall", "valor": "Si" },
+          { "etiqueta": "Total Cool", "valor": "Si" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02FR00316",
@@ -104,7 +261,30 @@
       "imagenes": [
         "assets/products/congeladores/L02FR00316/01.png",
         "assets/products/congeladores/L02FR00316/02.png"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "Congelador horizontal de 12 pies³ y una puerta, compacto y rendidor, ideal para el hogar o negocios pequeños. Con doble función para usarlo como congelador o enfriador, cerradura de seguridad y drenaje interno que facilita la limpieza.",
+        "especificaciones": [
+          { "etiqueta": "Tamaño", "valor": "340 litros / 12 pies³" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Puertas", "valor": "1" },
+          { "etiqueta": "Canastas de alambrón", "valor": "1" },
+          { "etiqueta": "Rango de Temperatura", "valor": "10 °C a -18 °C" },
+          { "etiqueta": "Consumo Energético cada 24 hrs", "valor": "1.5 kW" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Cuenta con cerradura", "valor": "Si" },
+          { "etiqueta": "Cuenta con drenaje interno", "valor": "Si" },
+          { "etiqueta": "Tipo de canastas", "valor": "Alambrón anticorrosivo" },
+          { "etiqueta": "Funciones", "valor": "Doble: congela y enfría" },
+          { "etiqueta": "Tipo de refrigerante", "valor": "R134a" },
+          { "etiqueta": "Control de temperatura", "valor": "Perilla manual" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Frozen wall", "valor": "Si" },
+          { "etiqueta": "Total Cool", "valor": "Si" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02FR00317",
@@ -114,7 +294,30 @@
       "imagenes": [
         "assets/products/congeladores/L02FR00317/01.png",
         "assets/products/congeladores/L02FR00317/02.png"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "Congelador horizontal de 15 pies³ con dos puertas y triple función: congela, enfría o conserva según lo necesites. Un tamaño intermedio muy versátil para el hogar o el negocio, con cerradura, drenaje interno y canastas de alambrón anticorrosivo.",
+        "especificaciones": [
+          { "etiqueta": "Tamaño", "valor": "425 litros / 15 pies³" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Puertas", "valor": "2" },
+          { "etiqueta": "Canastas de alambrón", "valor": "2" },
+          { "etiqueta": "Rango de Temperatura", "valor": "10 °C a -18 °C" },
+          { "etiqueta": "Consumo Energético cada 24 hrs", "valor": "1.8 kW" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Cuenta con cerradura", "valor": "Si" },
+          { "etiqueta": "Cuenta con drenaje interno", "valor": "Si" },
+          { "etiqueta": "Tipo de canastas", "valor": "Alambrón anticorrosivo" },
+          { "etiqueta": "Funciones", "valor": "Triple: congela, enfría y conserva" },
+          { "etiqueta": "Tipo de refrigerante", "valor": "R134a" },
+          { "etiqueta": "Control de temperatura", "valor": "Perilla manual" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Frozen wall", "valor": "Si" },
+          { "etiqueta": "Total Cool", "valor": "Si" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02FR00938",
@@ -123,7 +326,29 @@
       "descripcion": "Doble función, puertas corredizas de vidrio.",
       "imagenes": [
         "assets/products/congeladores/L02FR00938/01.png"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "Congelador exhibidor de 10.3 pies³ con puertas corredizas de vidrio, perfecto para mostrar helados, paletas y productos congelados en tu negocio. Su doble función permite usarlo también como enfriador, y las canastas de alambrón mantienen el producto ordenado y a la vista.",
+        "especificaciones": [
+          { "etiqueta": "Tamaño", "valor": "292 litros / 10.3 pies³" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Puertas", "valor": "2 corredizas de vidrio" },
+          { "etiqueta": "Canastas de alambrón", "valor": "2" },
+          { "etiqueta": "Rango de Temperatura", "valor": "10 °C a -18 °C" },
+          { "etiqueta": "Consumo Energético cada 24 hrs", "valor": "1.4 kW" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Puertas corredizas de vidrio", "valor": "Si" },
+          { "etiqueta": "Cuenta con cerradura", "valor": "Si" },
+          { "etiqueta": "Cuenta con drenaje interno", "valor": "Si" },
+          { "etiqueta": "Tipo de canastas", "valor": "Alambrón anticorrosivo" },
+          { "etiqueta": "Funciones", "valor": "Doble: congela y enfría" },
+          { "etiqueta": "Tipo de refrigerante", "valor": "R134a" },
+          { "etiqueta": "Control de temperatura", "valor": "Perilla manual" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02FR00939",
@@ -132,7 +357,29 @@
       "descripcion": "Doble función, puertas corredizas de vidrio.",
       "imagenes": [
         "assets/products/congeladores/L02FR00939/01.png"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "Congelador exhibidor de 12 pies³ con puertas corredizas de vidrio, ideal para pulperías, heladerías y supermercados. Exhibe el producto congelado a la vista del cliente, con doble función para alternar entre congelar y enfriar, y canastas de alambrón anticorrosivo.",
+        "especificaciones": [
+          { "etiqueta": "Tamaño", "valor": "340 litros / 12 pies³" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Puertas", "valor": "2 corredizas de vidrio" },
+          { "etiqueta": "Canastas de alambrón", "valor": "2" },
+          { "etiqueta": "Rango de Temperatura", "valor": "10 °C a -18 °C" },
+          { "etiqueta": "Consumo Energético cada 24 hrs", "valor": "1.5 kW" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Puertas corredizas de vidrio", "valor": "Si" },
+          { "etiqueta": "Cuenta con cerradura", "valor": "Si" },
+          { "etiqueta": "Cuenta con drenaje interno", "valor": "Si" },
+          { "etiqueta": "Tipo de canastas", "valor": "Alambrón anticorrosivo" },
+          { "etiqueta": "Funciones", "valor": "Doble: congela y enfría" },
+          { "etiqueta": "Tipo de refrigerante", "valor": "R134a" },
+          { "etiqueta": "Control de temperatura", "valor": "Perilla manual" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02E00322",
@@ -145,7 +392,29 @@
         "assets/products/estufas/L02E00322/03.png",
         "assets/products/estufas/L02E00322/04.png",
         "assets/products/estufas/L02E00322/05.png"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "Estufa de gas de 30 pulgadas en acabado negro con 6 quemadores de hierro colado que distribuyen el calor de manera uniforme y resisten el uso diario. Cuenta con superficie de acero inoxidable fácil de limpiar, encendido por chispero eléctrico y horno amplio con luz interior.",
+        "especificaciones": [
+          { "etiqueta": "Tamaño", "valor": "30 pulgadas" },
+          { "etiqueta": "Quemadores", "valor": "6 de hierro colado" },
+          { "etiqueta": "Encendido", "valor": "Chispero eléctrico" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)", "valor": "92 × 51 × 58 cm" },
+          { "etiqueta": "Tipo de gas", "valor": "GLP (propano)" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Color / acabado", "valor": "Negro con acero inoxidable" },
+          { "etiqueta": "Superficie de acero inoxidable", "valor": "Si" },
+          { "etiqueta": "Horno con luz interior", "valor": "Si" },
+          { "etiqueta": "Ventana en puerta del horno", "valor": "Si" },
+          { "etiqueta": "Parrillas de hierro colado", "valor": "Si" },
+          { "etiqueta": "Encendido eléctrico (chispero)", "valor": "Si" },
+          { "etiqueta": "Perillas removibles", "valor": "Si" },
+          { "etiqueta": "Tipo de gas", "valor": "GLP (propano)" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02E00323",
@@ -158,7 +427,29 @@
         "assets/products/estufas/L02E00323/03.png",
         "assets/products/estufas/L02E00323/04.png",
         "assets/products/estufas/L02E00323/05.png"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "Estufa de gas de 30 pulgadas en acabado de acero inoxidable con 6 quemadores de hierro colado, ideal para cocinas que exigen rendimiento y estilo. Superficie fácil de limpiar, encendido por chispero eléctrico y horno amplio con luz interior y ventana para vigilar la cocción.",
+        "especificaciones": [
+          { "etiqueta": "Tamaño", "valor": "30 pulgadas" },
+          { "etiqueta": "Quemadores", "valor": "6 de hierro colado" },
+          { "etiqueta": "Encendido", "valor": "Chispero eléctrico" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)", "valor": "92 × 51 × 58 cm" },
+          { "etiqueta": "Tipo de gas", "valor": "GLP (propano)" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Color / acabado", "valor": "Acero inoxidable" },
+          { "etiqueta": "Superficie de acero inoxidable", "valor": "Si" },
+          { "etiqueta": "Horno con luz interior", "valor": "Si" },
+          { "etiqueta": "Ventana en puerta del horno", "valor": "Si" },
+          { "etiqueta": "Parrillas de hierro colado", "valor": "Si" },
+          { "etiqueta": "Encendido eléctrico (chispero)", "valor": "Si" },
+          { "etiqueta": "Perillas removibles", "valor": "Si" },
+          { "etiqueta": "Tipo de gas", "valor": "GLP (propano)" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02FR00102",
@@ -173,7 +464,29 @@
         "assets/products/vitrinas/L02FR00102/05.png",
         "assets/products/vitrinas/L02FR00102/06.jpg",
         "assets/products/vitrinas/L02FR00102/07.jpg"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "Vitrina refrigerante vertical de 12 pies³ con puerta de vidrio, luz LED e indicador de temperatura, ideal para exhibir bebidas y lácteos en pulperías y tiendas. Sus parrillas ajustables permiten acomodar productos de distintos tamaños y mantenerlos siempre a la vista del cliente.",
+        "especificaciones": [
+          { "etiqueta": "Tamaño", "valor": "340 litros / 12 pies³" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)", "valor": "199 × 61 × 59 cm" },
+          { "etiqueta": "Puertas", "valor": "1 de vidrio" },
+          { "etiqueta": "Rango de Temperatura", "valor": "0 °C a 10 °C" },
+          { "etiqueta": "Iluminación", "valor": "Luz LED" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Indicador de temperatura", "valor": "Si" },
+          { "etiqueta": "Luz LED interna", "valor": "Si" },
+          { "etiqueta": "Parrillas ajustables", "valor": "Si" },
+          { "etiqueta": "Puerta de vidrio con marco", "valor": "Si" },
+          { "etiqueta": "Enfría hasta", "valor": "0 °C" },
+          { "etiqueta": "Tipo de refrigerante", "valor": "R134a" },
+          { "etiqueta": "Control de temperatura", "valor": "Perilla manual" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02FR00326",
@@ -186,7 +499,29 @@
         "assets/products/vitrinas/L02FR00326/03.png",
         "assets/products/vitrinas/L02FR00326/04.png",
         "assets/products/vitrinas/L02FR00326/05.jpg"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "Vitrina refrigerante de 25 pies³ con dos puertas de vidrio, termómetro y enfriamiento de hasta 0 °C. Excelente para supermercados y negocios con alta rotación de bebidas: gran capacidad de exhibición, luz LED y parrillas ajustables para organizar el producto.",
+        "especificaciones": [
+          { "etiqueta": "Tamaño", "valor": "708 litros / 25 pies³" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)", "valor": "194 × 99 × 56 cm" },
+          { "etiqueta": "Puertas", "valor": "2 de vidrio" },
+          { "etiqueta": "Rango de Temperatura", "valor": "0 °C a 10 °C" },
+          { "etiqueta": "Iluminación", "valor": "Luz LED" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Termómetro", "valor": "Si" },
+          { "etiqueta": "Luz LED interna", "valor": "Si" },
+          { "etiqueta": "Parrillas ajustables", "valor": "Si" },
+          { "etiqueta": "Puertas de vidrio con marco", "valor": "Si" },
+          { "etiqueta": "Enfría hasta", "valor": "0 °C" },
+          { "etiqueta": "Tipo de refrigerante", "valor": "R134a" },
+          { "etiqueta": "Control de temperatura", "valor": "Perilla manual" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02FR00327",
@@ -199,7 +534,29 @@
         "assets/products/vitrinas/L02FR00327/03.png",
         "assets/products/vitrinas/L02FR00327/04.png",
         "assets/products/vitrinas/L02FR00327/05.jpg"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "Vitrina refrigerante de 35 pies³ con dos puertas amplias de vidrio, termómetro y enfriamiento de hasta 0 °C. Pensada para supermercados y distribuidoras: máxima capacidad de exhibición con luz LED que resalta el producto y parrillas ajustables de gran resistencia.",
+        "especificaciones": [
+          { "etiqueta": "Tamaño", "valor": "990 litros / 35 pies³" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)", "valor": "196 × 119 × 57.5 cm" },
+          { "etiqueta": "Puertas", "valor": "2 de vidrio" },
+          { "etiqueta": "Rango de Temperatura", "valor": "0 °C a 10 °C" },
+          { "etiqueta": "Iluminación", "valor": "Luz LED" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Termómetro", "valor": "Si" },
+          { "etiqueta": "Luz LED interna", "valor": "Si" },
+          { "etiqueta": "Parrillas ajustables", "valor": "Si" },
+          { "etiqueta": "Puertas de vidrio con marco", "valor": "Si" },
+          { "etiqueta": "Enfría hasta", "valor": "0 °C" },
+          { "etiqueta": "Tipo de refrigerante", "valor": "R134a" },
+          { "etiqueta": "Control de temperatura", "valor": "Perilla manual" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02FR00328",
@@ -213,7 +570,29 @@
         "assets/products/vitrinas/L02FR00328/04.jpg",
         "assets/products/vitrinas/L02FR00328/05.png",
         "assets/products/vitrinas/L02FR00328/06.png"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "La vitrina más grande de la línea: 40 pies³ y tres puertas de vidrio para una exhibición masiva de bebidas y productos fríos. Con termómetro, luz LED y parrillas ajustables, es la aliada perfecta de supermercados, depósitos y negocios de alto movimiento.",
+        "especificaciones": [
+          { "etiqueta": "Tamaño", "valor": "1,132 litros / 40 pies³" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)", "valor": "202 × 150 × 55 cm" },
+          { "etiqueta": "Puertas", "valor": "3 de vidrio" },
+          { "etiqueta": "Rango de Temperatura", "valor": "0 °C a 10 °C" },
+          { "etiqueta": "Iluminación", "valor": "Luz LED" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Termómetro", "valor": "Si" },
+          { "etiqueta": "Luz LED interna", "valor": "Si" },
+          { "etiqueta": "Parrillas ajustables", "valor": "Si" },
+          { "etiqueta": "Puertas de vidrio con marco", "valor": "Si" },
+          { "etiqueta": "Enfría hasta", "valor": "0 °C" },
+          { "etiqueta": "Tipo de refrigerante", "valor": "R134a" },
+          { "etiqueta": "Control de temperatura", "valor": "Perilla manual" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02FR00329",
@@ -226,7 +605,28 @@
         "assets/products/vitrinas/L02FR00329/03.jpg",
         "assets/products/vitrinas/L02FR00329/04.jpg",
         "assets/products/vitrinas/L02FR00329/05.png"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "Vitrina refrigerante compacta de 10 pies³ con puerta de vidrio y luz LED, perfecta para pulperías y negocios con espacio reducido. Exhibe bebidas y productos fríos de forma atractiva, con parrillas ajustables y bajo consumo de energía.",
+        "especificaciones": [
+          { "etiqueta": "Tamaño", "valor": "283 litros / 10 pies³" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)", "valor": "173 × 60 × 59 cm" },
+          { "etiqueta": "Puertas", "valor": "1 de vidrio" },
+          { "etiqueta": "Rango de Temperatura", "valor": "0 °C a 10 °C" },
+          { "etiqueta": "Iluminación", "valor": "Luz LED" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Luz LED interna", "valor": "Si" },
+          { "etiqueta": "Parrillas ajustables", "valor": "Si" },
+          { "etiqueta": "Puerta de vidrio con marco", "valor": "Si" },
+          { "etiqueta": "Enfría hasta", "valor": "0 °C" },
+          { "etiqueta": "Tipo de refrigerante", "valor": "R134a" },
+          { "etiqueta": "Control de temperatura", "valor": "Perilla manual" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02FR00934",
@@ -237,7 +637,28 @@
         "assets/products/vitrinas/L02FR00934/01.png",
         "assets/products/vitrinas/L02FR00934/02.png",
         "assets/products/vitrinas/L02FR00934/03.jpg"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "Vitrina refrigerante esbelta de 10 pies³ con puerta de vidrio, luz LED y enfriamiento de hasta 0 °C. Su diseño angosto aprovecha muy bien el espacio en mostradores y pasillos, manteniendo las bebidas frías y a la vista del cliente.",
+        "especificaciones": [
+          { "etiqueta": "Tamaño", "valor": "283 litros / 10 pies³" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)", "valor": "177 × 57.5 × 50.5 cm" },
+          { "etiqueta": "Puertas", "valor": "1 de vidrio" },
+          { "etiqueta": "Rango de Temperatura", "valor": "0 °C a 10 °C" },
+          { "etiqueta": "Iluminación", "valor": "Luz LED" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Luz LED interna", "valor": "Si" },
+          { "etiqueta": "Parrillas ajustables", "valor": "Si" },
+          { "etiqueta": "Puerta de vidrio con marco", "valor": "Si" },
+          { "etiqueta": "Enfría hasta", "valor": "0 °C" },
+          { "etiqueta": "Tipo de refrigerante", "valor": "R134a" },
+          { "etiqueta": "Control de temperatura", "valor": "Perilla manual" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     },
     {
       "sku": "L02FR00941",
@@ -248,7 +669,29 @@
         "assets/products/vitrinas/L02FR00941/01.png",
         "assets/products/vitrinas/L02FR00941/02.png",
         "assets/products/vitrinas/L02FR00941/03.jpg"
-      ]
+      ],
+      "detalle": {
+        "descripcion": "Vitrina refrigerante de 20 pies³ con dos puertas de vidrio, luz LED y termómetro. Un equilibrio ideal entre capacidad y tamaño para tiendas, mini súper y restaurantes que quieren exhibir más producto frío sin ocupar demasiado espacio.",
+        "especificaciones": [
+          { "etiqueta": "Tamaño", "valor": "566 litros / 20 pies³" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)", "valor": "194 × 78 × 57 cm" },
+          { "etiqueta": "Puertas", "valor": "2 de vidrio" },
+          { "etiqueta": "Rango de Temperatura", "valor": "0 °C a 10 °C" },
+          { "etiqueta": "Iluminación", "valor": "Luz LED" }
+        ],
+        "adicionales": [
+          { "etiqueta": "Termómetro", "valor": "Si" },
+          { "etiqueta": "Luz LED interna", "valor": "Si" },
+          { "etiqueta": "Parrillas ajustables", "valor": "Si" },
+          { "etiqueta": "Puertas de vidrio con marco", "valor": "Si" },
+          { "etiqueta": "Enfría hasta", "valor": "0 °C" },
+          { "etiqueta": "Tipo de refrigerante", "valor": "R134a" },
+          { "etiqueta": "Control de temperatura", "valor": "Perilla manual" },
+          { "etiqueta": "Voltaje / Frecuencia", "valor": "110 V / 60 Hz" },
+          { "etiqueta": "Garantía", "valor": "1 año" }
+        ]
+      }
     }
   ]
 }

@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   renderizarCategorias();
   renderizarFiltros();
   renderizarProductos();
+  renderizarDetalleProducto();
   iniciarVisor();
 });
 
@@ -144,6 +145,30 @@ function nombreCategoria(id) {
   return cat ? cat.nombre : id;
 }
 
+function tarjetaHTML(p) {
+  const mensaje = `Hola, quisiera más información sobre ${p.nombre} (SKU: ${p.sku}).`;
+  const urlDetalle = `producto.html?sku=${encodeURIComponent(p.sku)}`;
+  return `
+  <article class="tarjeta">
+    <a class="tarjeta__imagen" href="${urlDetalle}" aria-label="Ver detalle de ${p.nombre}">
+      <img src="${p.imagenes[0]}" alt="${p.nombre}" loading="lazy" width="600" height="600">
+      ${p.imagenes.length > 1 ? `<span class="tarjeta__fotos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg> ${p.imagenes.length}</span>` : ""}
+    </a>
+    <div class="tarjeta__cuerpo">
+      <span class="tarjeta__categoria">${nombreCategoria(p.categoria)}</span>
+      <h3 class="tarjeta__nombre"><a href="${urlDetalle}">${p.nombre}</a></h3>
+      ${p.descripcion ? `<p class="tarjeta__descripcion">${p.descripcion}</p>` : ""}
+      <span class="tarjeta__sku">SKU: ${p.sku}</span>
+      <div class="tarjeta__acciones">
+        <a class="btn btn--primario" href="${urlDetalle}">Ver detalles</a>
+        <a class="btn btn--whatsapp" href="${enlaceWhatsApp(mensaje)}" target="_blank" rel="noopener">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </article>`;
+}
+
 function renderizarProductos(filtro = "todos") {
   const cont = document.querySelector("[data-productos]");
   if (!cont) return;
@@ -154,27 +179,131 @@ function renderizarProductos(filtro = "todos") {
   const limite = parseInt(cont.dataset.limite || "0", 10);
   if (limite > 0) lista = lista.slice(0, limite);
 
-  cont.innerHTML = lista
-    .map((p, i) => {
-      const mensaje = `Hola, quisiera más información sobre ${p.nombre} (SKU: ${p.sku}).`;
-      return `
-      <article class="tarjeta">
-        <div class="tarjeta__imagen" data-abrir-visor="${p.sku}">
-          <img src="${p.imagenes[0]}" alt="${p.nombre}" loading="lazy" width="600" height="600">
-          ${p.imagenes.length > 1 ? `<span class="tarjeta__fotos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg> ${p.imagenes.length}</span>` : ""}
-        </div>
-        <div class="tarjeta__cuerpo">
-          <span class="tarjeta__categoria">${nombreCategoria(p.categoria)}</span>
-          <h3 class="tarjeta__nombre">${p.nombre}</h3>
-          ${p.descripcion ? `<p class="tarjeta__descripcion">${p.descripcion}</p>` : ""}
-          <span class="tarjeta__sku">SKU: ${p.sku}</span>
-          <a class="btn btn--whatsapp" href="${enlaceWhatsApp(mensaje)}" target="_blank" rel="noopener">
-            Más información
-          </a>
-        </div>
-      </article>`;
-    })
+  cont.innerHTML = lista.map(tarjetaHTML).join("");
+}
+
+/* ---------- Página de detalle de producto ---------- */
+function renderizarDetalleProducto() {
+  const cont = document.querySelector("[data-detalle-producto]");
+  if (!cont) return;
+
+  const sku = new URLSearchParams(location.search).get("sku");
+  const p = DATOS.productos.find((x) => x.sku === sku);
+
+  if (!p) {
+    cont.innerHTML = `
+      <div class="detalle__no-encontrado">
+        <h1 class="seccion__titulo">Producto no encontrado</h1>
+        <p class="seccion__sub">El producto que buscas no está disponible.</p>
+        <p style="text-align:center;"><a class="btn btn--primario" href="catalogo.html">Ver el catálogo</a></p>
+      </div>`;
+    document.querySelector("#relacionados")?.classList.add("oculto");
+    return;
+  }
+
+  const d = p.detalle || {};
+  const mensaje = `Hola, quisiera más información sobre ${p.nombre} (SKU: ${p.sku}).`;
+  document.title = `${p.nombre} — AMERICANCOOL`;
+
+  const miniaturas = p.imagenes
+    .map(
+      (f, i) => `<button class="detalle__miniatura ${i === 0 ? "activo" : ""}" data-foto-detalle="${i}" aria-label="Foto ${i + 1}">
+        <img src="${f}" alt="Foto ${i + 1} de ${p.nombre}">
+      </button>`
+    )
     .join("");
+
+  const especificaciones = (d.especificaciones || [])
+    .map(
+      (e) => `
+      <div class="especificacion">
+        <span class="especificacion__etiqueta">${e.etiqueta}</span>
+        <span class="especificacion__valor">${e.valor}</span>
+      </div>`
+    )
+    .join("");
+
+  const adicionales = (d.adicionales || [])
+    .map(
+      (a) => `
+      <div class="adicionales__fila">
+        <span class="adicionales__etiqueta">${a.etiqueta}</span>
+        <span class="adicionales__valor">${a.valor}</span>
+      </div>`
+    )
+    .join("");
+
+  cont.innerHTML = `
+    <nav class="miga" aria-label="Ruta de navegación">
+      <a href="index.html">Inicio</a> <span>/</span>
+      <a href="catalogo.html#${p.categoria}">${nombreCategoria(p.categoria)}</a> <span>/</span>
+      <span>${p.nombre}</span>
+    </nav>
+
+    <div class="detalle">
+      <div class="detalle__galeria">
+        <div class="detalle__imagen" data-abrir-visor="${p.sku}" title="Haz clic para ampliar">
+          <img src="${p.imagenes[0]}" alt="${p.nombre}">
+          <span class="detalle__lupa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+        </div>
+        ${p.imagenes.length > 1 ? `<div class="detalle__miniaturas">${miniaturas}</div>` : ""}
+      </div>
+
+      <div class="detalle__info">
+        <span class="tarjeta__categoria">${nombreCategoria(p.categoria)}</span>
+        <h1 class="detalle__nombre">${p.nombre}</h1>
+        <p class="detalle__sku">SKU: ${p.sku}</p>
+        ${d.descripcion ? `<p class="detalle__descripcion">${d.descripcion}</p>` : ""}
+        <div class="detalle__acciones">
+          <a class="btn btn--whatsapp" href="${enlaceWhatsApp(mensaje)}" target="_blank" rel="noopener">
+            Consultar por WhatsApp
+          </a>
+          <a class="btn btn--contorno" href="catalogo.html#${p.categoria}">Volver al catálogo</a>
+        </div>
+      </div>
+    </div>
+
+    ${especificaciones ? `
+    <div class="detalle__bloque">
+      <h2 class="detalle__rotulo">Características básicas</h2>
+      <div class="especificaciones">${especificaciones}</div>
+    </div>` : ""}
+
+    ${adicionales ? `
+    <div class="detalle__bloque">
+      <h2 class="detalle__rotulo">Todas las características</h2>
+      <div class="adicionales">
+        <h3 class="adicionales__titulo">Detalles Adicionales</h3>
+        <div class="adicionales__lista">${adicionales}</div>
+      </div>
+    </div>` : ""}
+  `;
+
+  // Cambiar la foto principal al hacer clic en una miniatura
+  const imagenPrincipal = cont.querySelector(".detalle__imagen img");
+  cont.querySelectorAll("[data-foto-detalle]").forEach((b) => {
+    b.addEventListener("click", () => {
+      imagenPrincipal.src = p.imagenes[parseInt(b.dataset.fotoDetalle, 10)];
+      cont.querySelectorAll("[data-foto-detalle]").forEach((m) =>
+        m.classList.toggle("activo", m === b)
+      );
+    });
+  });
+
+  renderizarRelacionados(p);
+}
+
+function renderizarRelacionados(producto) {
+  const cont = document.querySelector("[data-relacionados]");
+  if (!cont) return;
+  const relacionados = DATOS.productos
+    .filter((x) => x.categoria === producto.categoria && x.sku !== producto.sku)
+    .slice(0, 4);
+  if (relacionados.length === 0) {
+    document.querySelector("#relacionados")?.classList.add("oculto");
+    return;
+  }
+  cont.innerHTML = relacionados.map(tarjetaHTML).join("");
 }
 
 /* ---------- Visor de fotos ---------- */

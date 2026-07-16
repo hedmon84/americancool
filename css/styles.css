@@ -84,7 +84,7 @@ a { color: var(--azul); text-decoration: none; }
 /* ---------- Héroe / carrusel ---------- */
 .heroe { background: linear-gradient(135deg, var(--azul-oscuro), var(--azul) 55%, var(--celeste)); color: var(--blanco); }
 .heroe__interno {
-  display: grid; grid-template-columns: 1fr auto; gap: 2.5rem;
+  display: grid; grid-template-columns: 1.05fr 1fr; gap: 2.5rem;
   align-items: center; padding: 3rem 0;
 }
 .heroe__lema {
@@ -99,7 +99,7 @@ a { color: var(--azul); text-decoration: none; }
 .carrusel {
   position: relative; border-radius: var(--radio); overflow: hidden;
   box-shadow: var(--sombra-hover); background: var(--azul-oscuro);
-  aspect-ratio: 1 / 2; width: min(300px, 78vw); justify-self: center;
+  aspect-ratio: 2 / 1; width: min(560px, 100%); justify-self: center;
 }
 .carrusel__pista { display: flex; height: 100%; transition: transform 0.6s ease; }
 .carrusel__pista img { width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%; }
@@ -162,7 +162,7 @@ a { color: var(--azul); text-decoration: none; }
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .tarjeta:hover { transform: translateY(-4px); box-shadow: var(--sombra-hover); }
-.tarjeta__imagen { aspect-ratio: 1 / 1; background: var(--blanco); cursor: pointer; position: relative; }
+.tarjeta__imagen { display: block; aspect-ratio: 1 / 1; background: var(--blanco); cursor: pointer; position: relative; }
 .tarjeta__imagen img { width: 100%; height: 100%; object-fit: contain; padding: 0.8rem; }
 .tarjeta__fotos {
   position: absolute; right: 10px; bottom: 10px; background: rgba(7,42,85,0.75);
@@ -175,7 +175,10 @@ a { color: var(--azul); text-decoration: none; }
 .tarjeta__nombre { font-size: 1rem; color: var(--texto); line-height: 1.3; }
 .tarjeta__descripcion { font-size: 0.83rem; color: var(--gris-texto); }
 .tarjeta__sku { font-size: 0.8rem; color: var(--gris-texto); }
-.tarjeta .btn { margin-top: auto; width: 100%; font-size: 0.9rem; }
+.tarjeta__nombre a { color: var(--texto); }
+.tarjeta__nombre a:hover { color: var(--azul); }
+.tarjeta__acciones { margin-top: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+.tarjeta .btn { width: 100%; font-size: 0.85rem; padding: 0.55rem 0.6rem; }
 
 /* ---------- Visor de fotos (lightbox) ---------- */
 .visor {
@@ -233,6 +236,81 @@ a { color: var(--azul); text-decoration: none; }
 }
 .whatsapp-flotante:hover { transform: scale(1.08); }
 .whatsapp-flotante svg { width: 32px; height: 32px; fill: var(--blanco); }
+
+/* ---------- Página de detalle de producto ---------- */
+.seccion--detalle { padding-top: 2rem; }
+.detalle__cargando { text-align: center; color: var(--gris-texto); padding: 3rem 0; }
+
+.miga { font-size: 0.85rem; color: var(--gris-texto); margin-bottom: 1.6rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.miga a { color: var(--azul); font-weight: 600; }
+.miga span:last-child { color: var(--gris-texto); }
+
+.detalle {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2.5rem; align-items: start; margin-bottom: 2.6rem;
+}
+.detalle__galeria { position: sticky; top: 90px; }
+.detalle__imagen {
+  position: relative; aspect-ratio: 1 / 1; background: var(--blanco);
+  border: 1px solid #e2e8f0; border-radius: var(--radio); cursor: zoom-in; overflow: hidden;
+}
+.detalle__imagen img { width: 100%; height: 100%; object-fit: contain; padding: 1.4rem; }
+.detalle__lupa {
+  position: absolute; right: 12px; bottom: 12px; width: 38px; height: 38px;
+  background: rgba(7,42,85,0.75); color: var(--blanco); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+.detalle__lupa svg { width: 19px; height: 19px; }
+.detalle__miniaturas { display: flex; gap: 0.55rem; margin-top: 0.8rem; overflow-x: auto; padding-bottom: 0.2rem; }
+.detalle__miniatura {
+  flex: 0 0 auto; width: 68px; height: 68px; padding: 0; background: var(--blanco);
+  border: 2px solid #e2e8f0; border-radius: 10px; cursor: pointer; overflow: hidden;
+}
+.detalle__miniatura img { width: 100%; height: 100%; object-fit: contain; padding: 4px; }
+.detalle__miniatura.activo, .detalle__miniatura:hover { border-color: var(--celeste); }
+
+.detalle__nombre { font-size: clamp(1.4rem, 3vw, 2rem); color: var(--azul-oscuro); line-height: 1.2; margin: 0.35rem 0 0.3rem; }
+.detalle__sku { font-size: 0.85rem; color: var(--gris-texto); margin-bottom: 1rem; }
+.detalle__descripcion { color: var(--gris-texto); font-size: 1rem; margin-bottom: 1.5rem; }
+.detalle__acciones { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+
+.detalle__bloque { margin-bottom: 2.4rem; }
+.detalle__rotulo {
+  font-size: 0.82rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--gris-texto); margin-bottom: 1rem;
+}
+
+/* tarjetas de características básicas (estilo ficha técnica) */
+.especificaciones { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
+.especificacion {
+  background: var(--blanco); border: 1px solid #e2e8f0; border-radius: 8px;
+  padding: 1.1rem 1.2rem; display: flex; flex-direction: column; gap: 0.35rem;
+}
+.especificacion__etiqueta { color: var(--gris-texto); font-size: 0.95rem; }
+.especificacion__valor { color: var(--azul-oscuro); font-weight: 800; font-size: 1.02rem; }
+
+/* tabla de detalles adicionales */
+.adicionales {
+  background: var(--blanco); border: 1px solid #e2e8f0; border-radius: 8px;
+  padding: 1.4rem 1.6rem; display: grid; grid-template-columns: 220px 1fr; gap: 1rem 2rem;
+}
+.adicionales__titulo { color: var(--azul-oscuro); font-size: 1rem; }
+.adicionales__lista { display: flex; flex-direction: column; }
+.adicionales__fila {
+  display: grid; grid-template-columns: minmax(180px, 1fr) 1fr; gap: 1rem;
+  padding: 0.45rem 0; border-bottom: 1px solid #eef2f7;
+}
+.adicionales__fila:last-child { border-bottom: 0; }
+.adicionales__etiqueta { color: var(--gris-texto); }
+.adicionales__valor { color: var(--texto); }
+
+@media (max-width: 860px) {
+  .detalle { grid-template-columns: 1fr; gap: 1.6rem; }
+  .detalle__galeria { position: static; }
+  .adicionales { grid-template-columns: 1fr; padding: 1.1rem 1.2rem; }
+  .adicionales__fila { grid-template-columns: 1fr; gap: 0.1rem; padding: 0.55rem 0; }
+  .adicionales__valor { font-weight: 600; }
+}
 
 /* ---------- Utilidades ---------- */
 .oculto { display: none !important; }
