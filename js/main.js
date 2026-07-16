@@ -9,6 +9,10 @@ const WHATSAPP_NUMERO = "50432677622";
 const enlaceWhatsApp = (mensaje) =>
   `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensaje)}`;
 
+/* Ícono de WhatsApp para los botones de cotización */
+const ICONO_WA =
+  '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2.7C8.7 2.7 2.8 8.6 2.8 15.9c0 2.3.6 4.6 1.8 6.6L2.7 29.3l7-1.8c1.9 1 4.1 1.6 6.3 1.6 7.3 0 13.2-5.9 13.2-13.2S23.3 2.7 16 2.7zm0 24.1c-2 0-3.9-.5-5.6-1.5l-.4-.2-4.2 1.1 1.1-4.1-.3-.4c-1.1-1.8-1.7-3.8-1.7-5.8C4.9 9.8 9.9 4.9 16 4.9s11.1 5 11.1 11.1S22.1 26.8 16 26.8zm6.1-8.3c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6-.1-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.7 5.8 5.2.8.4 1.4.6 1.9.7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.4z"/></svg>';
+
 let DATOS = { categorias: [], productos: [] };
 
 /* Tiendas físicas (Mundi Ofertas) donde se venden los productos */
@@ -117,6 +121,10 @@ function iniciarWhatsAppGeneral() {
     el.href = enlaceWhatsApp(mensaje);
     el.target = "_blank";
     el.rel = "noopener";
+  });
+  // Agregar el ícono de WhatsApp a los botones verdes que aún no lo tienen
+  document.querySelectorAll(".btn--whatsapp").forEach((el) => {
+    if (!el.querySelector("svg")) el.insertAdjacentHTML("afterbegin", ICONO_WA);
   });
 }
 
@@ -245,7 +253,7 @@ function tarjetaHTML(p) {
       <div class="tarjeta__acciones">
         <a class="btn btn--primario" href="${urlDetalle}">Ver detalles</a>
         <a class="btn btn--whatsapp" href="${enlaceWhatsApp(mensaje)}" target="_blank" rel="noopener">
-          WhatsApp
+          ${ICONO_WA} Cotizar
         </a>
       </div>
     </div>
@@ -339,7 +347,7 @@ function renderizarDetalleProducto() {
         ${d.descripcion ? `<p class="detalle__descripcion">${d.descripcion}</p>` : ""}
         <div class="detalle__acciones">
           <a class="btn btn--whatsapp" href="${enlaceWhatsApp(mensaje)}" target="_blank" rel="noopener">
-            Consultar por WhatsApp
+            ${ICONO_WA} Cotizar por WhatsApp
           </a>
           <a class="btn btn--contorno" href="catalogo.html#${p.categoria}">Volver al catálogo</a>
         </div>

@@ -77,6 +77,7 @@ a { color: var(--azul); text-decoration: none; }
   font-size: 0.95rem;
 }
 .btn:hover { transform: translateY(-2px); box-shadow: var(--sombra-hover); }
+.btn svg { width: 1.1em; height: 1.1em; fill: currentColor; flex: 0 0 auto; }
 .btn--primario { background: var(--azul); color: var(--blanco); }
 .btn--whatsapp { background: var(--whatsapp); color: var(--blanco); }
 .btn--contorno { background: transparent; color: var(--azul); border: 2px solid var(--azul); }
