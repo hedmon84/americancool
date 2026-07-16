@@ -215,7 +215,9 @@ a { color: var(--azul); text-decoration: none; }
 
 /* ---------- Franja "disponible en Honduras" ---------- */
 .franja { background: var(--azul-oscuro); color: var(--blanco); text-align: center; padding: 2.4rem 0; }
-.franja img { margin: 0 auto 1.2rem; border-radius: 10px; max-height: 90px; width: auto; }
+.franja__banner { display: block; margin: 0 auto 1.4rem; width: min(728px, 100%); transition: transform 0.15s ease; }
+.franja__banner:hover { transform: scale(1.02); }
+.franja img { display: block; border-radius: 10px; width: 100%; height: auto; box-shadow: var(--sombra-hover); }
 .franja h2 { font-size: clamp(1.2rem, 2.6vw, 1.7rem); margin-bottom: 0.4rem; }
 .franja p { opacity: 0.9; }
 
