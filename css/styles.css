@@ -85,9 +85,9 @@ a { color: var(--azul); text-decoration: none; }
 /* ---------- Héroe / carrusel ---------- */
 .heroe { background: linear-gradient(135deg, var(--azul-oscuro), var(--azul) 55%, var(--celeste)); color: var(--blanco); }
 .heroe__interno {
-  display: grid; grid-template-columns: 1.05fr 1fr; gap: 2.5rem;
-  align-items: center; padding: 3rem 0;
+  max-width: 780px; margin-inline: auto; text-align: center; padding: 2.8rem 0;
 }
+.heroe .heroe__acciones { justify-content: center; }
 .heroe__lema {
   display: inline-block; background: rgba(255,255,255,0.14); border-radius: 999px;
   padding: 0.3rem 1rem; font-weight: 700; font-size: 0.9rem; margin-bottom: 1rem;
@@ -111,8 +111,18 @@ a { color: var(--azul); text-decoration: none; }
 }
 .carrusel__puntos button.activo { background: var(--blanco); }
 
+/* cinta: slider de banners largos a todo lo ancho, bajo el encabezado */
+.carrusel--cinta {
+  width: 100%; max-width: none; border-radius: 0; box-shadow: none;
+  aspect-ratio: 728 / 90;
+}
+@media (max-width: 720px) {
+  .carrusel--cinta .carrusel__puntos { bottom: 4px; }
+  .carrusel--cinta .carrusel__puntos button { width: 7px; height: 7px; }
+}
+
 @media (max-width: 860px) {
-  .heroe__interno { grid-template-columns: 1fr; padding: 2rem 0; }
+  .heroe__interno { padding: 2rem 0; }
 }
 
 /* ---------- Secciones ---------- */
