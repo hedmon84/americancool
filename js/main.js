@@ -11,6 +11,28 @@ const enlaceWhatsApp = (mensaje) =>
 
 let DATOS = { categorias: [], productos: [] };
 
+/* Tiendas físicas (Mundi Ofertas) donde se venden los productos */
+const TIENDAS = [
+  {
+    ciudad: "Villanueva",
+    direccion: "Sobre el boulevard principal de la CA-5, a la par de Popeyes y Autorepuestos.",
+    coords: [15.3172, -87.9885]
+  },
+  {
+    ciudad: "San Pedro Sula",
+    direccion: "Bo. El Benque, 7 calle y 8 avenida, a una cuadra del Hospital Leonardo Martínez.",
+    coords: [15.4995, -88.0322]
+  },
+  {
+    ciudad: "Choloma",
+    direccion: "Boulevard hacia Puerto Cortés, atrás de Popeyes.",
+    coords: [15.6142, -87.9532]
+  }
+];
+
+const enlaceComoLlegar = (t) =>
+  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`Mundi Ofertas ${t.ciudad}, Honduras`)}`;
+
 /* Iconos SVG de línea por categoría (24x24, trazo redondeado) */
 const ICONO_SVG = {
   aires: '<rect x="2" y="4" width="20" height="9" rx="2"/><line x1="5" y1="9.5" x2="19" y2="9.5"/><path d="M7 16.5v3.5M12 16.5v3.5M17 16.5v3.5"/>',
@@ -31,6 +53,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   iniciarMenuMovil();
   iniciarCarrusel();
   iniciarWhatsAppGeneral();
+  iniciarMapa();
 
   try {
     const resp = await fetch("data/products.json");
@@ -94,6 +117,66 @@ function iniciarWhatsAppGeneral() {
     el.href = enlaceWhatsApp(mensaje);
     el.target = "_blank";
     el.rel = "noopener";
+  });
+}
+
+/* ---------- Mapa de tiendas (sección Ubicación) ---------- */
+function iniciarMapa() {
+  const lista = document.querySelector("[data-tiendas]");
+  const cajaMapa = document.getElementById("mapa");
+  if (!lista || !cajaMapa) return;
+
+  lista.innerHTML = TIENDAS.map(
+    (t, i) => `
+    <article class="tienda" data-tienda="${i}">
+      <span class="tienda__icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5S5 15.7 5 10a7 7 0 0 1 14 0c0 5.7-7 11.5-7 11.5z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+      <div>
+        <h3>${t.ciudad}</h3>
+        <p>${t.direccion}</p>
+        <a href="${enlaceComoLlegar(t)}" target="_blank" rel="noopener">Cómo llegar →</a>
+      </div>
+    </article>`
+  ).join("");
+
+  // Si la librería del mapa no cargó (sin internet), dejamos solo las tarjetas
+  if (typeof L === "undefined") {
+    cajaMapa.classList.add("oculto");
+    return;
+  }
+
+  const mapa = L.map(cajaMapa, { scrollWheelZoom: false });
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(mapa);
+
+  const icono = L.divIcon({
+    className: "pin-tienda",
+    html: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 23S4 16.4 4 9.8A8 8 0 0 1 20 9.8C20 16.4 12 23 12 23z" fill="#0b5ed7" stroke="#072a55" stroke-width="1"/><circle cx="12" cy="9.8" r="3" fill="#fff"/></svg>',
+    iconSize: [36, 36],
+    iconAnchor: [18, 34],
+    popupAnchor: [0, -30]
+  });
+
+  const marcadores = TIENDAS.map((t) =>
+    L.marker(t.coords, { icon: icono, title: t.ciudad })
+      .addTo(mapa)
+      .bindPopup(
+        `<strong>${t.ciudad}</strong><br>${t.direccion}<br>
+         <a href="${enlaceComoLlegar(t)}" target="_blank" rel="noopener">Cómo llegar →</a>`
+      )
+  );
+
+  mapa.fitBounds(L.latLngBounds(TIENDAS.map((t) => t.coords)), { padding: [45, 45] });
+
+  // Al hacer clic en una tarjeta, centrar el mapa en esa tienda
+  lista.addEventListener("click", (e) => {
+    if (e.target.closest("a")) return;
+    const tarjeta = e.target.closest("[data-tienda]");
+    if (!tarjeta) return;
+    const i = parseInt(tarjeta.dataset.tienda, 10);
+    mapa.flyTo(TIENDAS[i].coords, 15, { duration: 0.8 });
+    marcadores[i].openPopup();
   });
 }
 

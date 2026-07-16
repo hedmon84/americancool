@@ -10,6 +10,7 @@
   <meta property="og:image" content="assets/banners/variado-600x300.png">
   <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -24,6 +25,7 @@
         <a href="index.html" class="activo">Inicio</a>
         <a href="catalogo.html">Productos</a>
         <a href="index.html#nosotros">Nosotros</a>
+        <a href="index.html#ubicacion">Ubicación</a>
         <a href="index.html#contacto">Contacto</a>
         <a class="btn btn--whatsapp" data-whatsapp-general href="#">WhatsApp</a>
       </nav>
@@ -103,7 +105,18 @@
     <div class="contenedor">
       <img src="assets/banners/hn-728x90.png" alt="AMERICANCOOL disponible en Honduras" loading="lazy">
       <h2>Disponible en Honduras</h2>
-      <p>Pregunta por nuestros puntos de venta y disponibilidad en tu ciudad.</p>
+      <p>Visítanos en nuestras tiendas de Villanueva, San Pedro Sula y Choloma.</p>
+    </div>
+  </section>
+
+  <section class="seccion seccion--gris" id="ubicacion">
+    <div class="contenedor">
+      <h2 class="seccion__titulo">¿Dónde estamos?</h2>
+      <p class="seccion__sub">Encuentra los productos AMERICANCOOL en las tiendas Mundi Ofertas</p>
+      <div class="ubicacion">
+        <div id="mapa" class="ubicacion__mapa" aria-label="Mapa de Honduras con nuestras tiendas"></div>
+        <div class="ubicacion__lista" data-tiendas></div>
+      </div>
     </div>
   </section>
 
@@ -125,7 +138,8 @@
         <div>
           <h4>Contacto</h4>
           <a data-whatsapp-general href="#">Escríbenos por WhatsApp</a>
-          <p>Honduras</p>
+          <a href="index.html#ubicacion">Nuestras tiendas</a>
+          <p>Villanueva · San Pedro Sula · Choloma, Honduras</p>
         </div>
       </div>
       <p class="pie__legal">© 2026 AMERICANCOOL. Todos los derechos reservados.</p>
@@ -153,6 +167,7 @@
     </div>
   </div>
 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
