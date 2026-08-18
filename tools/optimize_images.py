@@ -8,7 +8,7 @@ from PIL import Image
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PRODUCTS = ROOT / "assets" / "products"
-DATA = ROOT / "data" / "products.json"
+FICHAS = ROOT / "data" / "productos"
 
 renamed = {}
 for png in sorted(PRODUCTS.rglob("*.png")):
@@ -29,9 +29,9 @@ for png in sorted(PRODUCTS.rglob("*.png")):
     else:
         jpg.unlink()
 
-data = json.loads(DATA.read_text())
-for p in data["productos"]:
-    p["imagenes"] = [renamed.get(i, i) for i in p["imagenes"]]
-DATA.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+for ficha in FICHAS.glob("*.json"):
+    d = json.loads(ficha.read_text())
+    d["imagenes"] = [renamed.get(i, i) for i in d.get("imagenes", [])]
+    ficha.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n")
 
 print(f"convertidas a JPEG: {len(renamed)}")

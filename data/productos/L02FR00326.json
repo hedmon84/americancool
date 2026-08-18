@@ -1,0 +1,80 @@
+{
+  "sku": "L02FR00326",
+  "categoria": "vitrinas",
+  "nombre": "Vitrina Refrigerante 25 Pies · 2 Puertas",
+  "descripcion": "Termómetro, enfría hasta 0 °C. Dimensiones: 194 × 99 × 56 cm.",
+  "imagenes": [
+    "assets/products/vitrinas/L02FR00326/01.png",
+    "assets/products/vitrinas/L02FR00326/02.png",
+    "assets/products/vitrinas/L02FR00326/03.png",
+    "assets/products/vitrinas/L02FR00326/04.png",
+    "assets/products/vitrinas/L02FR00326/05.jpg"
+  ],
+  "detalle": {
+    "descripcion": "Vitrina refrigerante de 25 pies³ con dos puertas de vidrio, termómetro y enfriamiento de hasta 0 °C. Excelente para supermercados y negocios con alta rotación de bebidas: gran capacidad de exhibición, luz LED y parrillas ajustables para organizar el producto.",
+    "especificaciones": [
+      {
+        "etiqueta": "Tamaño",
+        "valor": "708 litros / 25 pies³"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)",
+        "valor": "194 × 99 × 56 cm"
+      },
+      {
+        "etiqueta": "Puertas",
+        "valor": "2 de vidrio"
+      },
+      {
+        "etiqueta": "Rango de Temperatura",
+        "valor": "0 °C a 10 °C"
+      },
+      {
+        "etiqueta": "Iluminación",
+        "valor": "Luz LED"
+      }
+    ],
+    "adicionales": [
+      {
+        "etiqueta": "Termómetro",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Luz LED interna",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Parrillas ajustables",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Puertas de vidrio con marco",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Enfría hasta",
+        "valor": "0 °C"
+      },
+      {
+        "etiqueta": "Tipo de refrigerante",
+        "valor": "R134a"
+      },
+      {
+        "etiqueta": "Control de temperatura",
+        "valor": "Perilla manual"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Garantía",
+        "valor": "1 año"
+      }
+    ]
+  }
+}

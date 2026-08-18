@@ -1,5 +1,6 @@
 # Configuración del CMS (Pages CMS) — panel en https://app.pagescms.org
-# Define qué se puede editar del sitio desde el panel de administración.
+# Cada producto es una ficha propia dentro de data/productos/.
+# Al guardar, GitHub reconstruye data/products.json, que es lo que carga el sitio.
 
 media:
   input: assets/products
@@ -9,103 +10,108 @@ media:
 content:
   - name: productos
     label: Productos
+    type: collection
+    path: data/productos
+    format: json
+    filename: "{fields.sku}.json"
+    view:
+      primary: nombre
+      fields: [nombre, sku, categoria]
+      search: [nombre, sku, descripcion]
+      sort: nombre
+      order: asc
+    fields:
+      - name: nombre
+        label: Nombre del producto
+        type: string
+        required: true
+        description: "Ej.: Aire Acondicionado Split 18,000 BTU"
+
+      - name: sku
+        label: Código (SKU)
+        type: string
+        required: true
+        description: "Código único del producto; también es el nombre del archivo. Ej.: L02A00132"
+
+      - name: categoria
+        label: Categoría
+        type: select
+        required: true
+        options:
+          values:
+            - name: aires
+              label: Aires Acondicionados
+            - name: refrigeradores
+              label: Refrigeradores
+            - name: congeladores
+              label: Congeladores
+            - name: estufas
+              label: Estufas
+            - name: vitrinas
+              label: Vitrinas
+
+      - name: descripcion
+        label: Descripción corta
+        type: text
+        description: "La línea que aparece en la tarjeta del catálogo. Ej.: Gas R410 · SEER 13. Dimensiones 29 × 85 × 19 cm."
+
+      - name: imagenes
+        label: Fotos del producto
+        type: image
+        list: true
+        description: "La primera foto es la que se ve en el catálogo. Arrastra para cambiar el orden."
+
+      - name: detalle
+        label: Página de detalle
+        type: object
+        fields:
+          - name: descripcion
+            label: Descripción larga
+            type: text
+            description: "Párrafo que explica el producto en su página de detalle."
+
+          - name: especificaciones
+            label: Especificaciones principales
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{fields.etiqueta}: {fields.valor}"
+            description: "Se muestran destacadas en recuadros (capacidad, voltaje, dimensiones…)."
+            fields:
+              - name: etiqueta
+                label: Característica
+                type: string
+                description: "Ej.: Capacidad"
+              - name: valor
+                label: Valor
+                type: string
+                description: "Ej.: 18,000 BTU"
+
+          - name: adicionales
+            label: Información adicional
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{fields.etiqueta}: {fields.valor}"
+            description: "Tabla de datos secundarios (garantía, modos, accesorios…)."
+            fields:
+              - name: etiqueta
+                label: Característica
+                type: string
+                description: "Ej.: Garantía"
+              - name: valor
+                label: Valor
+                type: string
+                description: "Ej.: 1 año"
+
+  - name: categorias
+    label: Categorías
     type: file
-    path: data/products.json
+    path: data/categorias.json
     format: json
     fields:
-      - name: productos
-        label: Productos
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{fields.nombre}  ·  {fields.sku}"
-        fields:
-          - name: nombre
-            label: Nombre del producto
-            type: string
-            required: true
-            description: "Ej.: Aire Acondicionado Split 18,000 BTU"
-
-          - name: sku
-            label: Código (SKU)
-            type: string
-            required: true
-            description: "Código interno del producto. Ej.: L02A00132"
-
-          - name: categoria
-            label: Categoría
-            type: select
-            required: true
-            options:
-              values:
-                - name: aires
-                  label: Aires Acondicionados
-                - name: refrigeradores
-                  label: Refrigeradores
-                - name: congeladores
-                  label: Congeladores
-                - name: estufas
-                  label: Estufas
-                - name: vitrinas
-                  label: Vitrinas
-
-          - name: descripcion
-            label: Descripción corta
-            type: text
-            description: "Una línea que aparece en la tarjeta del catálogo. Ej.: Gas R410 · SEER 13. Dimensiones 29 × 85 × 19 cm."
-
-          - name: imagenes
-            label: Fotos del producto
-            type: image
-            list: true
-            description: "La primera foto es la que se ve en el catálogo. Arrastra para cambiar el orden."
-
-          - name: detalle
-            label: Página de detalle
-            type: object
-            fields:
-              - name: descripcion
-                label: Descripción larga
-                type: text
-                description: "Párrafo que explica el producto en su página de detalle."
-
-              - name: especificaciones
-                label: Especificaciones principales
-                type: object
-                list:
-                  collapsible:
-                    collapsed: true
-                    summary: "{fields.etiqueta}: {fields.valor}"
-                description: "Se muestran destacadas en recuadros (capacidad, voltaje, dimensiones…)."
-                fields:
-                  - name: etiqueta
-                    label: Característica
-                    type: string
-                    description: "Ej.: Capacidad"
-                  - name: valor
-                    label: Valor
-                    type: string
-                    description: "Ej.: 18,000 BTU"
-
-              - name: adicionales
-                label: Información adicional
-                type: object
-                list:
-                  collapsible:
-                    collapsed: true
-                    summary: "{fields.etiqueta}: {fields.valor}"
-                description: "Tabla de datos secundarios (garantía, modos, accesorios…)."
-                fields:
-                  - name: etiqueta
-                    label: Característica
-                    type: string
-                    description: "Ej.: Garantía"
-                  - name: valor
-                    label: Valor
-                    type: string
-                    description: "Ej.: 1 año"
-
       - name: categorias
         label: Categorías
         type: object
@@ -113,7 +119,7 @@ content:
           collapsible:
             collapsed: true
             summary: "{fields.nombre}"
-        description: "Categorías que aparecen en el inicio y en los filtros del catálogo."
+        description: "Aparecen en el inicio y en los filtros del catálogo."
         fields:
           - name: id
             label: Identificador

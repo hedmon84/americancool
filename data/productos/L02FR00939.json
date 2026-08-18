@@ -1,0 +1,76 @@
+{
+  "sku": "L02FR00939",
+  "categoria": "congeladores",
+  "nombre": "Congelador 12 Pies · Puertas de Vidrio",
+  "descripcion": "Doble función, puertas corredizas de vidrio.",
+  "imagenes": [
+    "assets/products/congeladores/L02FR00939/01.png"
+  ],
+  "detalle": {
+    "descripcion": "Congelador exhibidor de 12 pies³ con puertas corredizas de vidrio, ideal para pulperías, heladerías y supermercados. Exhibe el producto congelado a la vista del cliente, con doble función para alternar entre congelar y enfriar, y canastas de alambrón anticorrosivo.",
+    "especificaciones": [
+      {
+        "etiqueta": "Tamaño",
+        "valor": "340 litros / 12 pies³"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Puertas",
+        "valor": "2 corredizas de vidrio"
+      },
+      {
+        "etiqueta": "Canastas de alambrón",
+        "valor": "2"
+      },
+      {
+        "etiqueta": "Rango de Temperatura",
+        "valor": "10 °C a -18 °C"
+      },
+      {
+        "etiqueta": "Consumo Energético cada 24 hrs",
+        "valor": "1.5 kW"
+      }
+    ],
+    "adicionales": [
+      {
+        "etiqueta": "Puertas corredizas de vidrio",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Cuenta con cerradura",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Cuenta con drenaje interno",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Tipo de canastas",
+        "valor": "Alambrón anticorrosivo"
+      },
+      {
+        "etiqueta": "Funciones",
+        "valor": "Doble: congela y enfría"
+      },
+      {
+        "etiqueta": "Tipo de refrigerante",
+        "valor": "R134a"
+      },
+      {
+        "etiqueta": "Control de temperatura",
+        "valor": "Perilla manual"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Garantía",
+        "valor": "1 año"
+      }
+    ]
+  }
+}

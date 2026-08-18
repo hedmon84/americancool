@@ -1,0 +1,74 @@
+{
+  "sku": "L02FR00934",
+  "categoria": "vitrinas",
+  "nombre": "Vitrina Refrigerante 10 Pies · 1 Puerta",
+  "descripcion": "Luz LED, enfría hasta 0 °C. Dimensiones: 177 × 57.5 × 50.5 cm.",
+  "imagenes": [
+    "assets/products/vitrinas/L02FR00934/01.png",
+    "assets/products/vitrinas/L02FR00934/02.png",
+    "assets/products/vitrinas/L02FR00934/03.jpg"
+  ],
+  "detalle": {
+    "descripcion": "Vitrina refrigerante esbelta de 10 pies³ con puerta de vidrio, luz LED y enfriamiento de hasta 0 °C. Su diseño angosto aprovecha muy bien el espacio en mostradores y pasillos, manteniendo las bebidas frías y a la vista del cliente.",
+    "especificaciones": [
+      {
+        "etiqueta": "Tamaño",
+        "valor": "283 litros / 10 pies³"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)",
+        "valor": "177 × 57.5 × 50.5 cm"
+      },
+      {
+        "etiqueta": "Puertas",
+        "valor": "1 de vidrio"
+      },
+      {
+        "etiqueta": "Rango de Temperatura",
+        "valor": "0 °C a 10 °C"
+      },
+      {
+        "etiqueta": "Iluminación",
+        "valor": "Luz LED"
+      }
+    ],
+    "adicionales": [
+      {
+        "etiqueta": "Luz LED interna",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Parrillas ajustables",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Puerta de vidrio con marco",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Enfría hasta",
+        "valor": "0 °C"
+      },
+      {
+        "etiqueta": "Tipo de refrigerante",
+        "valor": "R134a"
+      },
+      {
+        "etiqueta": "Control de temperatura",
+        "valor": "Perilla manual"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Garantía",
+        "valor": "1 año"
+      }
+    ]
+  }
+}

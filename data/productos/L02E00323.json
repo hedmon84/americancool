@@ -1,0 +1,80 @@
+{
+  "sku": "L02E00323",
+  "categoria": "estufas",
+  "nombre": "Estufa de Gas 30\" · 6 Quemadores (Inoxidable)",
+  "descripcion": "Quemadores de hierro colado, superficie de acero inoxidable, luz y chispero. Dimensiones: 92 × 51 × 58 cm.",
+  "imagenes": [
+    "assets/products/estufas/L02E00323/01.png",
+    "assets/products/estufas/L02E00323/02.png",
+    "assets/products/estufas/L02E00323/03.png",
+    "assets/products/estufas/L02E00323/04.png",
+    "assets/products/estufas/L02E00323/05.png"
+  ],
+  "detalle": {
+    "descripcion": "Estufa de gas de 30 pulgadas en acabado de acero inoxidable con 6 quemadores de hierro colado, ideal para cocinas que exigen rendimiento y estilo. Superficie fácil de limpiar, encendido por chispero eléctrico y horno amplio con luz interior y ventana para vigilar la cocción.",
+    "especificaciones": [
+      {
+        "etiqueta": "Tamaño",
+        "valor": "30 pulgadas"
+      },
+      {
+        "etiqueta": "Quemadores",
+        "valor": "6 de hierro colado"
+      },
+      {
+        "etiqueta": "Encendido",
+        "valor": "Chispero eléctrico"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)",
+        "valor": "92 × 51 × 58 cm"
+      },
+      {
+        "etiqueta": "Tipo de gas",
+        "valor": "GLP (propano)"
+      }
+    ],
+    "adicionales": [
+      {
+        "etiqueta": "Color / acabado",
+        "valor": "Acero inoxidable"
+      },
+      {
+        "etiqueta": "Superficie de acero inoxidable",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Horno con luz interior",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Ventana en puerta del horno",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Parrillas de hierro colado",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Encendido eléctrico (chispero)",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Perillas removibles",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Tipo de gas",
+        "valor": "GLP (propano)"
+      },
+      {
+        "etiqueta": "Garantía",
+        "valor": "1 año"
+      }
+    ]
+  }
+}

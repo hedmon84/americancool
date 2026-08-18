@@ -1,0 +1,78 @@
+{
+  "sku": "L02FR00941",
+  "categoria": "vitrinas",
+  "nombre": "Vitrina Refrigerante 20 Pies · 2 Puertas",
+  "descripcion": "Luz LED y termómetro. Dimensiones: 194 × 78 × 57 cm.",
+  "imagenes": [
+    "assets/products/vitrinas/L02FR00941/01.png",
+    "assets/products/vitrinas/L02FR00941/02.png",
+    "assets/products/vitrinas/L02FR00941/03.jpg"
+  ],
+  "detalle": {
+    "descripcion": "Vitrina refrigerante de 20 pies³ con dos puertas de vidrio, luz LED y termómetro. Un equilibrio ideal entre capacidad y tamaño para tiendas, mini súper y restaurantes que quieren exhibir más producto frío sin ocupar demasiado espacio.",
+    "especificaciones": [
+      {
+        "etiqueta": "Tamaño",
+        "valor": "566 litros / 20 pies³"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)",
+        "valor": "194 × 78 × 57 cm"
+      },
+      {
+        "etiqueta": "Puertas",
+        "valor": "2 de vidrio"
+      },
+      {
+        "etiqueta": "Rango de Temperatura",
+        "valor": "0 °C a 10 °C"
+      },
+      {
+        "etiqueta": "Iluminación",
+        "valor": "Luz LED"
+      }
+    ],
+    "adicionales": [
+      {
+        "etiqueta": "Termómetro",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Luz LED interna",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Parrillas ajustables",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Puertas de vidrio con marco",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Enfría hasta",
+        "valor": "0 °C"
+      },
+      {
+        "etiqueta": "Tipo de refrigerante",
+        "valor": "R134a"
+      },
+      {
+        "etiqueta": "Control de temperatura",
+        "valor": "Perilla manual"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Garantía",
+        "valor": "1 año"
+      }
+    ]
+  }
+}

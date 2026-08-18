@@ -1,0 +1,76 @@
+{
+  "sku": "L02A00132",
+  "categoria": "aires",
+  "nombre": "Aire Acondicionado Split 18,000 BTU",
+  "descripcion": "Gas R410 · SEER 13. Dimensiones: 29 × 85 × 19 cm.",
+  "imagenes": [
+    "assets/products/aires/L02A00132/01.png"
+  ],
+  "detalle": {
+    "descripcion": "Aire acondicionado tipo mini split de 18,000 BTU, ideal para salas, comercios y habitaciones amplias de hasta 40 m². Funciona con gas ecológico R410A y eficiencia SEER 13, para un enfriamiento potente con menor consumo de energía. Incluye control remoto y filtro lavable de fácil mantenimiento.",
+    "especificaciones": [
+      {
+        "etiqueta": "Capacidad",
+        "valor": "18,000 BTU"
+      },
+      {
+        "etiqueta": "Área recomendada",
+        "valor": "Hasta 40 m²"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "220 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Refrigerante",
+        "valor": "R410A ecológico"
+      },
+      {
+        "etiqueta": "Eficiencia",
+        "valor": "SEER 13"
+      },
+      {
+        "etiqueta": "Dimensiones evaporadora (Alto × Ancho × Prof.)",
+        "valor": "29 × 85 × 19 cm"
+      }
+    ],
+    "adicionales": [
+      {
+        "etiqueta": "Tipo de equipo",
+        "valor": "Mini split (evaporadora + condensadora)"
+      },
+      {
+        "etiqueta": "Control remoto",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Modo frío",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Modo deshumidificador",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Modo ventilador",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Filtro lavable",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Aletas de flujo ajustable",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "220 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Garantía",
+        "valor": "1 año"
+      }
+    ]
+  }
+}

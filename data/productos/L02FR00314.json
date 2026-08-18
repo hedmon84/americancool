@@ -1,0 +1,81 @@
+{
+  "sku": "L02FR00314",
+  "categoria": "congeladores",
+  "nombre": "Congelador 18 Pies · 2 Puertas",
+  "descripcion": "Doble función.",
+  "imagenes": [
+    "assets/products/congeladores/L02FR00314/01.png",
+    "assets/products/congeladores/L02FR00314/02.png"
+  ],
+  "detalle": {
+    "descripcion": "Congelador horizontal de 18 pies³ con dos puertas, pensado para hogares y negocios que necesitan buen espacio de almacenamiento. Su doble función permite alternar entre congelar y enfriar según la temporada, con paredes frozen wall que distribuyen el frío de forma pareja.",
+    "especificaciones": [
+      {
+        "etiqueta": "Tamaño",
+        "valor": "509 litros / 18 pies³"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Puertas",
+        "valor": "2"
+      },
+      {
+        "etiqueta": "Canastas de alambrón",
+        "valor": "2"
+      },
+      {
+        "etiqueta": "Rango de Temperatura",
+        "valor": "10 °C a -18 °C"
+      },
+      {
+        "etiqueta": "Consumo Energético cada 24 hrs",
+        "valor": "2.0 kW"
+      }
+    ],
+    "adicionales": [
+      {
+        "etiqueta": "Cuenta con cerradura",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Cuenta con drenaje interno",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Tipo de canastas",
+        "valor": "Alambrón anticorrosivo"
+      },
+      {
+        "etiqueta": "Funciones",
+        "valor": "Doble: congela y enfría"
+      },
+      {
+        "etiqueta": "Tipo de refrigerante",
+        "valor": "R134a"
+      },
+      {
+        "etiqueta": "Control de temperatura",
+        "valor": "Perilla manual"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Frozen wall",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Total Cool",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Garantía",
+        "valor": "1 año"
+      }
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "sku": "L02FR00315",
+  "categoria": "congeladores",
+  "nombre": "Congelador 21 Pies · 2 Puertas",
+  "descripcion": "Triple función. Dimensiones: 80 × 179 × 68 cm.",
+  "imagenes": [
+    "assets/products/congeladores/L02FR00315/01.png",
+    "assets/products/congeladores/L02FR00315/02.png"
+  ],
+  "detalle": {
+    "descripcion": "Congelador horizontal de 21 pies³ con dos puertas y sistema de triple función: congela, enfría o conserva según lo que necesites. Ideal para negocios de alimentos y hogares grandes. Incluye cerradura de seguridad, drenaje interno y canastas de alambrón anticorrosivo.",
+    "especificaciones": [
+      {
+        "etiqueta": "Tamaño",
+        "valor": "594 litros / 21 pies³"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)",
+        "valor": "80 × 179 × 68 cm"
+      },
+      {
+        "etiqueta": "Canastas de alambrón",
+        "valor": "2"
+      },
+      {
+        "etiqueta": "Rango de Temperatura",
+        "valor": "10 °C a -18 °C"
+      },
+      {
+        "etiqueta": "Consumo Energético cada 24 hrs",
+        "valor": "2.2 kW"
+      }
+    ],
+    "adicionales": [
+      {
+        "etiqueta": "Cuenta con cerradura",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Cuenta con drenaje interno",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Tipo de canastas",
+        "valor": "Alambrón anticorrosivo"
+      },
+      {
+        "etiqueta": "Funciones",
+        "valor": "Triple: congela, enfría y conserva"
+      },
+      {
+        "etiqueta": "Tipo de refrigerante",
+        "valor": "R134a"
+      },
+      {
+        "etiqueta": "Control de temperatura",
+        "valor": "Perilla manual"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Frozen wall",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Total Cool",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Garantía",
+        "valor": "1 año"
+      }
+    ]
+  }
+}

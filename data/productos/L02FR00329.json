@@ -1,0 +1,76 @@
+{
+  "sku": "L02FR00329",
+  "categoria": "vitrinas",
+  "nombre": "Vitrina Refrigerante 10 Pies · 1 Puerta",
+  "descripcion": "Luz LED. Dimensiones: 173 × 60 × 59 cm.",
+  "imagenes": [
+    "assets/products/vitrinas/L02FR00329/01.png",
+    "assets/products/vitrinas/L02FR00329/02.png",
+    "assets/products/vitrinas/L02FR00329/03.jpg",
+    "assets/products/vitrinas/L02FR00329/04.jpg",
+    "assets/products/vitrinas/L02FR00329/05.png"
+  ],
+  "detalle": {
+    "descripcion": "Vitrina refrigerante compacta de 10 pies³ con puerta de vidrio y luz LED, perfecta para pulperías y negocios con espacio reducido. Exhibe bebidas y productos fríos de forma atractiva, con parrillas ajustables y bajo consumo de energía.",
+    "especificaciones": [
+      {
+        "etiqueta": "Tamaño",
+        "valor": "283 litros / 10 pies³"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)",
+        "valor": "173 × 60 × 59 cm"
+      },
+      {
+        "etiqueta": "Puertas",
+        "valor": "1 de vidrio"
+      },
+      {
+        "etiqueta": "Rango de Temperatura",
+        "valor": "0 °C a 10 °C"
+      },
+      {
+        "etiqueta": "Iluminación",
+        "valor": "Luz LED"
+      }
+    ],
+    "adicionales": [
+      {
+        "etiqueta": "Luz LED interna",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Parrillas ajustables",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Puerta de vidrio con marco",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Enfría hasta",
+        "valor": "0 °C"
+      },
+      {
+        "etiqueta": "Tipo de refrigerante",
+        "valor": "R134a"
+      },
+      {
+        "etiqueta": "Control de temperatura",
+        "valor": "Perilla manual"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Garantía",
+        "valor": "1 año"
+      }
+    ]
+  }
+}

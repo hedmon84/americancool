@@ -1,0 +1,78 @@
+{
+  "sku": "L02R00411",
+  "categoria": "refrigeradores",
+  "nombre": "Refrigerador Side by Side 16 Pies",
+  "descripcion": "Modelo ARSS1530SS. 2 puertas, sin escarcha, con dispensador de agua.",
+  "imagenes": [
+    "assets/products/refrigeradores/L02R00411/01.png",
+    "assets/products/refrigeradores/L02R00411/02.png",
+    "assets/products/refrigeradores/L02R00411/03.png"
+  ],
+  "detalle": {
+    "descripcion": "Refrigerador side by side de 16 pies³ (modelo ARSS1530SS) con congelador y refrigerador lado a lado, tecnología sin escarcha (no frost) y dispensador de agua en la puerta. Su acabado en acero inoxidable le da un toque moderno a cualquier cocina, y sus parrillas ajustables permiten organizar el espacio a tu gusto.",
+    "especificaciones": [
+      {
+        "etiqueta": "Tamaño",
+        "valor": "16 pies³ / 453 litros"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Puertas",
+        "valor": "2 (side by side)"
+      },
+      {
+        "etiqueta": "Sistema de enfriamiento",
+        "valor": "No frost (sin escarcha)"
+      },
+      {
+        "etiqueta": "Dispensador de agua",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Acabado",
+        "valor": "Acero inoxidable"
+      }
+    ],
+    "adicionales": [
+      {
+        "etiqueta": "Modelo",
+        "valor": "ARSS1530SS"
+      },
+      {
+        "etiqueta": "Cuenta con dispensador de agua",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Iluminación interna",
+        "valor": "LED"
+      },
+      {
+        "etiqueta": "Parrillas ajustables",
+        "valor": "Si, de vidrio templado"
+      },
+      {
+        "etiqueta": "Compartimientos en puerta",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Cajón para frutas y verduras",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Control de temperatura",
+        "valor": "Perilla manual"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Garantía",
+        "valor": "1 año"
+      }
+    ]
+  }
+}

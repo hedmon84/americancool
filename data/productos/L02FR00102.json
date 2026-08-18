@@ -1,0 +1,82 @@
+{
+  "sku": "L02FR00102",
+  "categoria": "vitrinas",
+  "nombre": "Vitrina Refrigerante 12 Pies · 1 Puerta",
+  "descripcion": "Luz LED e indicador de temperatura. Dimensiones: 199 × 61 × 59 cm.",
+  "imagenes": [
+    "assets/products/vitrinas/L02FR00102/01.png",
+    "assets/products/vitrinas/L02FR00102/02.png",
+    "assets/products/vitrinas/L02FR00102/03.jpg",
+    "assets/products/vitrinas/L02FR00102/04.png",
+    "assets/products/vitrinas/L02FR00102/05.png",
+    "assets/products/vitrinas/L02FR00102/06.jpg",
+    "assets/products/vitrinas/L02FR00102/07.jpg"
+  ],
+  "detalle": {
+    "descripcion": "Vitrina refrigerante vertical de 12 pies³ con puerta de vidrio, luz LED e indicador de temperatura, ideal para exhibir bebidas y lácteos en pulperías y tiendas. Sus parrillas ajustables permiten acomodar productos de distintos tamaños y mantenerlos siempre a la vista del cliente.",
+    "especificaciones": [
+      {
+        "etiqueta": "Tamaño",
+        "valor": "340 litros / 12 pies³"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)",
+        "valor": "199 × 61 × 59 cm"
+      },
+      {
+        "etiqueta": "Puertas",
+        "valor": "1 de vidrio"
+      },
+      {
+        "etiqueta": "Rango de Temperatura",
+        "valor": "0 °C a 10 °C"
+      },
+      {
+        "etiqueta": "Iluminación",
+        "valor": "Luz LED"
+      }
+    ],
+    "adicionales": [
+      {
+        "etiqueta": "Indicador de temperatura",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Luz LED interna",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Parrillas ajustables",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Puerta de vidrio con marco",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Enfría hasta",
+        "valor": "0 °C"
+      },
+      {
+        "etiqueta": "Tipo de refrigerante",
+        "valor": "R134a"
+      },
+      {
+        "etiqueta": "Control de temperatura",
+        "valor": "Perilla manual"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Garantía",
+        "valor": "1 año"
+      }
+    ]
+  }
+}

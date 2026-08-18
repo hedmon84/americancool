@@ -1,0 +1,81 @@
+{
+  "sku": "L02FR00328",
+  "categoria": "vitrinas",
+  "nombre": "Vitrina Refrigerante 40 Pies · 3 Puertas",
+  "descripcion": "Termómetro y luz LED. Dimensiones: 202 × 150 × 55 cm.",
+  "imagenes": [
+    "assets/products/vitrinas/L02FR00328/01.png",
+    "assets/products/vitrinas/L02FR00328/02.png",
+    "assets/products/vitrinas/L02FR00328/03.png",
+    "assets/products/vitrinas/L02FR00328/04.jpg",
+    "assets/products/vitrinas/L02FR00328/05.png",
+    "assets/products/vitrinas/L02FR00328/06.png"
+  ],
+  "detalle": {
+    "descripcion": "La vitrina más grande de la línea: 40 pies³ y tres puertas de vidrio para una exhibición masiva de bebidas y productos fríos. Con termómetro, luz LED y parrillas ajustables, es la aliada perfecta de supermercados, depósitos y negocios de alto movimiento.",
+    "especificaciones": [
+      {
+        "etiqueta": "Tamaño",
+        "valor": "1,132 litros / 40 pies³"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Dimensiones (Alto × Ancho × Profundidad)",
+        "valor": "202 × 150 × 55 cm"
+      },
+      {
+        "etiqueta": "Puertas",
+        "valor": "3 de vidrio"
+      },
+      {
+        "etiqueta": "Rango de Temperatura",
+        "valor": "0 °C a 10 °C"
+      },
+      {
+        "etiqueta": "Iluminación",
+        "valor": "Luz LED"
+      }
+    ],
+    "adicionales": [
+      {
+        "etiqueta": "Termómetro",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Luz LED interna",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Parrillas ajustables",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Puertas de vidrio con marco",
+        "valor": "Si"
+      },
+      {
+        "etiqueta": "Enfría hasta",
+        "valor": "0 °C"
+      },
+      {
+        "etiqueta": "Tipo de refrigerante",
+        "valor": "R134a"
+      },
+      {
+        "etiqueta": "Control de temperatura",
+        "valor": "Perilla manual"
+      },
+      {
+        "etiqueta": "Voltaje / Frecuencia",
+        "valor": "110 V / 60 Hz"
+      },
+      {
+        "etiqueta": "Garantía",
+        "valor": "1 año"
+      }
+    ]
+  }
+}
