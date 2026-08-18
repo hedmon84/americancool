@@ -1,0 +1,60 @@
+name: Publicar en el hosting
+
+# Reconstruye el catálogo y sube el sitio al servidor por FTP.
+# Requiere tres secretos del repositorio (Settings > Secrets and variables > Actions):
+#   FTP_SERVIDOR  -> ej. ftp.tudominio.com
+#   FTP_USUARIO   -> usuario FTP creado en cPanel
+#   FTP_CLAVE     -> contraseña de ese usuario
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 1. Regenerar data/products.json a partir de las fichas del CMS
+      - name: Generar catálogo
+        run: python3 tools/build_catalog.py
+
+      - name: Guardar el catálogo si cambió
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/products.json
+          if git diff --staged --quiet; then
+            echo "Catálogo sin cambios."
+          else
+            git commit -m "Actualiza el catálogo desde el CMS [skip ci]"
+            git push
+          fi
+
+      # 2. Subir el sitio ya actualizado al hosting
+      - name: Subir por FTP
+        if: ${{ vars.FTP_ACTIVO == 'si' }}
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVIDOR }}
+          username: ${{ secrets.FTP_USUARIO }}
+          password: ${{ secrets.FTP_CLAVE }}
+          protocol: ${{ vars.FTP_PROTOCOLO || 'ftps' }}
+          server-dir: ${{ vars.FTP_CARPETA || 'public_html/' }}
+          # Archivos que no tienen por qué vivir en el servidor
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            tools/**
+            data/productos/**
+            data/categorias.json
+            *.md
