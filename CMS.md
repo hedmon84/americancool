@@ -33,9 +33,19 @@ El sitio se actualiza solo en **más o menos un minuto**. Si no ves el cambio, r
 
 > Puedes guardar un producto aunque todavía no tengas las fotos o las especificaciones: mientras tanto se muestra una imagen de "Foto pendiente" y la página funciona con normalidad.
 
-## Invitar a tu equipo
+## Invitar a tu equipo (sin cuenta de GitHub)
 
-En Pages CMS puedes invitar a otras personas **por correo electrónico**, sin que necesiten cuenta de GitHub. Búscalo en la opción de colaboradores del panel. Así mercadeo puede subir productos sin pedirte nada.
+El administrador o la persona de mercadeo **no necesita cuenta de GitHub**. Funciona así:
+
+1. Tú, desde el panel del repositorio, abres la sección de **colaboradores** e invitas a la persona con su **correo electrónico**.
+2. A esa persona le llega la invitación. Entra a **https://app.pagescms.org** y elige iniciar sesión **con su correo** (no con GitHub).
+3. Le llega un **código de 6 dígitos** a su correo, lo escribe y entra directo a editar los productos.
+
+De ahí en adelante entra siempre igual: correo + código. No tiene que crear ninguna cuenta.
+
+> Como los cambios se guardan usando el permiso que tú le diste a la aplicación, en el historial de GitHub los commits pueden aparecer a nombre de la app y no de cada persona. Para el uso normal no afecta en nada.
+
+**El único paso que sí requiere tu cuenta de GitHub** es el inicial: instalar la aplicación Pages CMS en el repositorio `americancool`. Eso lo haces tú una sola vez.
 
 ## Cosas importantes
 
