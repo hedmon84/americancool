@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Producto sin foto">
+  <rect width="600" height="600" fill="#f2f6fa"/>
+  <g fill="none" stroke="#b9c8d8" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="170" y="205" width="260" height="190" rx="18"/>
+    <path d="M170 340l70-62 58 50 52-44 80 68"/>
+    <circle cx="252" cy="258" r="18"/>
+  </g>
+  <text x="300" y="452" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="30" font-weight="700" fill="#8fa3b8">Foto pendiente</text>
+</svg>

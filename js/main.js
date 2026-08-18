@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   try {
     const resp = await fetch("data/products.json");
-    DATOS = await resp.json();
+    DATOS = normalizar(await resp.json());
   } catch (e) {
     console.error("No se pudo cargar data/products.json", e);
     return;
@@ -73,6 +73,24 @@ document.addEventListener("DOMContentLoaded", async () => {
   renderizarDetalleProducto();
   iniciarVisor();
 });
+
+/* Un producto recién creado en el CMS puede guardarse todavía sin fotos o sin
+   detalle; se rellenan aquí para que ninguna página falle por eso. */
+const SIN_FOTO = "assets/sin-foto.svg";
+
+function normalizar(datos) {
+  const d = datos || {};
+  d.categorias = (d.categorias || []).filter((c) => c && c.id);
+  d.productos = (d.productos || []).filter((p) => p && p.sku);
+  d.productos.forEach((p) => {
+    p.nombre = p.nombre || p.sku;
+    p.descripcion = p.descripcion || "";
+    p.detalle = p.detalle || {};
+    p.imagenes = (p.imagenes || []).filter(Boolean);
+    if (!p.imagenes.length) p.imagenes = [SIN_FOTO];
+  });
+  return d;
+}
 
 /* ---------- Menú móvil ---------- */
 function iniciarMenuMovil() {
