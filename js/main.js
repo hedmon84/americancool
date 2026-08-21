@@ -104,12 +104,48 @@ function iniciarMenuMovil() {
 }
 
 /* ---------- Carrusel del héroe ---------- */
-function iniciarCarrusel() {
+/* Los banners viven en data/banners.json y se editan desde el CMS. */
+async function cargarBanners() {
+  try {
+    const resp = await fetch("data/banners.json");
+    const datos = await resp.json();
+    return (datos.banners || []).filter((b) => b && b.imagen && b.activo !== false);
+  } catch (e) {
+    console.error("No se pudo cargar data/banners.json", e);
+    return [];
+  }
+}
+
+function escapar(texto) {
+  return String(texto == null ? "" : texto).replace(
+    /[&<>"']/g,
+    (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
+  );
+}
+
+async function iniciarCarrusel() {
   const carrusel = document.querySelector(".carrusel");
   if (!carrusel) return;
   const pista = carrusel.querySelector(".carrusel__pista");
-  const imagenes = pista.querySelectorAll("img");
   const puntos = carrusel.querySelector(".carrusel__puntos");
+  if (!pista || !puntos) return;
+
+  const banners = await cargarBanners();
+  if (!banners.length) {
+    carrusel.hidden = true;
+    return;
+  }
+
+  pista.innerHTML = banners
+    .map((b, i) => {
+      const img =
+        `<img src="${escapar(b.imagen)}" alt="${escapar(b.texto)}"` +
+        `${i === 0 ? "" : ' loading="lazy"'} width="2184" height="270">`;
+      return b.enlace ? `<a href="${escapar(b.enlace)}">${img}</a>` : img;
+    })
+    .join("");
+
+  const imagenes = banners;
   if (imagenes.length < 2) return;
 
   let indice = 0;

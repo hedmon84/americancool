@@ -12,13 +12,14 @@ Guárdate esa dirección en favoritos: es tu panel de administración de ahora e
 
 ## Qué puedes editar
 
-En el menú lateral verás dos secciones:
+En el menú lateral verás tres secciones:
 
 - **Productos** — una lista buscable donde **cada equipo es su propia ficha**. Puedes buscar por nombre, SKU o descripción, y ordenar por las columnas (nombre, código, categoría). Al abrir una ficha ves todos sus datos:
   - Nombre, Código (SKU) y Categoría
   - Descripción corta (la línea que se ve en la tarjeta del catálogo)
   - Fotos del producto (la primera es la que se muestra en el catálogo; se pueden arrastrar para reordenar)
   - **Página de detalle**: descripción larga, especificaciones principales (los recuadros de capacidad, voltaje, dimensiones…) e información adicional (la tabla de garantía, modos, accesorios…)
+- **Banners del slider** — las imágenes de la cinta que gira debajo del encabezado en la página de inicio.
 - **Categorías** — las cinco categorías del sitio, con su nombre y descripción.
 
 ## Agregar un producto nuevo
@@ -32,6 +33,22 @@ En el menú lateral verás dos secciones:
 El sitio se actualiza solo en **más o menos dos minutos** (primero se guarda la ficha y luego se reconstruye el catálogo). Si no ves el cambio, recarga con `Cmd+Shift+R` (Mac) o `Ctrl+F5` (Windows) para saltarte el caché del navegador.
 
 > Puedes guardar un producto aunque todavía no tengas las fotos o las especificaciones: mientras tanto se muestra una imagen de "Foto pendiente" y la página funciona con normalidad.
+
+## Cambiar los banners del slider
+
+1. Entra a **Banners del slider**. Verás la lista de banners en el mismo orden en que aparecen en la página.
+2. Para **cambiar uno**: ábrelo y sube otra imagen en *Imagen del banner*.
+3. Para **agregar uno**: haz clic en el botón de agregar al final de la lista, sube la imagen y escribe el texto alternativo.
+4. Para **quitar uno**: puedes borrarlo, o mejor apagar *Mostrar en el sitio* si lo vas a volver a usar más adelante.
+5. Para **cambiar el orden**: arrastra los banners dentro de la lista.
+6. Haz clic en **Save**.
+
+Sobre las imágenes:
+
+- El formato es una cinta horizontal, proporción **728 × 90**. Súbelas en **2184 × 270 px** para que se vean nítidas en pantallas grandes.
+- El **texto alternativo** es obligatorio: no se ve en la página, pero lo leen Google y los lectores de pantalla. Describe la promoción en una frase.
+- El **enlace** es opcional. Si lo llenas, el banner se vuelve clicable; por ejemplo `catalogo.html?categoria=congeladores` o `producto.html?sku=L02FR00314`.
+- El slider cambia de banner solo cada 5 segundos. Con un solo banner se queda fijo, sin puntitos.
 
 ## Invitar a tu equipo (sin cuenta de GitHub)
 
@@ -60,13 +77,13 @@ Estos textos siguen en el código y hay que pedir el cambio:
 - Los textos de la página de inicio y de "Nosotros"
 - Las direcciones de las tiendas y el mapa
 - El número de WhatsApp
-- Los banners del slider
 
 Si quieres que alguno de estos también se pueda editar desde el panel, se puede agregar.
 
 ## Cómo funciona por dentro (por si algún día hace falta)
 
-- Cada producto es un archivo en `data/productos/<SKU>.json`; las categorías están en `data/categorias.json`.
+- Cada producto es un archivo en `data/productos/<SKU>.json`; las categorías están en `data/categorias.json` y los banners en `data/banners.json`.
 - Al guardar, GitHub ejecuta `tools/build_catalog.py`, que une todo en `data/products.json`, que es el único archivo que carga el sitio. Por eso la página sigue siendo rápida aunque haya muchos productos.
 - Ese paso es automático. Si alguna vez quieres correrlo a mano: `python3 tools/build_catalog.py`.
+- Los banners no pasan por ese paso: la página de inicio lee `data/banners.json` directamente, así que un cambio de banner se ve apenas termina de publicarse.
 - **No edites `data/products.json` directamente**: se regenera solo y perderías el cambio.

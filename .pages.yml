@@ -3,9 +3,16 @@
 # Al guardar, GitHub reconstruye data/products.json, que es lo que carga el sitio.
 
 media:
-  input: assets/products
-  output: assets/products
-  categories: [image]
+  - name: productos
+    label: Fotos de productos
+    input: assets/products
+    output: assets/products
+    categories: [image]
+  - name: banners
+    label: Banners del slider
+    input: assets/banners
+    output: assets/banners
+    categories: [image]
 
 content:
   - name: productos
@@ -59,6 +66,8 @@ content:
         label: Fotos del producto
         type: image
         list: true
+        options:
+          media: productos
         description: "La primera foto es la que se ve en el catálogo. Arrastra para cambiar el orden."
 
       - name: detalle
@@ -105,6 +114,43 @@ content:
                 label: Valor
                 type: string
                 description: "Ej.: 1 año"
+
+  - name: banners
+    label: Banners del slider
+    type: file
+    path: data/banners.json
+    format: json
+    fields:
+      - name: banners
+        label: Banners de la página de inicio
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.texto}"
+        description: "Se muestran en la cinta que gira debajo del encabezado, en el orden de esta lista. Arrastra para reordenar."
+        fields:
+          - name: imagen
+            label: Imagen del banner
+            type: image
+            required: true
+            options:
+              media: banners
+            description: "Formato horizontal tipo cinta (proporción 728 × 90). Lo ideal es subirla en 2184 × 270 px para que se vea nítida."
+          - name: texto
+            label: Texto alternativo
+            type: string
+            required: true
+            description: "Describe la promoción en una frase. Lo leen Google y los lectores de pantalla; no se ve en la página."
+          - name: enlace
+            label: Enlace (opcional)
+            type: string
+            description: "Si lo llenas, el banner se vuelve clicable. Ej.: catalogo.html?categoria=congeladores"
+          - name: activo
+            label: Mostrar en el sitio
+            type: boolean
+            default: true
+            description: "Desactívalo para ocultar el banner sin borrarlo."
 
   - name: categorias
     label: Categorías

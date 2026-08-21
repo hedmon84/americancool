@@ -1,0 +1,22 @@
+{
+  "banners": [
+    {
+      "imagen": "assets/banners/hd-emprendedores-728x90.jpg",
+      "texto": "AMERICANCOOL hace crecer tu negocio: calidad americana, máxima durabilidad y tecnología eficiente",
+      "enlace": "",
+      "activo": true
+    },
+    {
+      "imagen": "assets/banners/hd-congeladores-728x90.jpg",
+      "texto": "Nuevo freezer AMERICANCOOL con 3 niveles de enfriamiento: enfría, mantiene y congela",
+      "enlace": "",
+      "activo": true
+    },
+    {
+      "imagen": "assets/banners/hd-refris-728x90.jpg",
+      "texto": "Refrigeradora AMERICANCOOL estilo side by side: amplio espacio, ahorro de energía y refrigerante ecológico R600a",
+      "enlace": "",
+      "activo": true
+    }
+  ]
+}
