@@ -21,9 +21,13 @@ content:
     path: data/productos
     format: json
     filename: "{fields.sku}.json"
+    # Una carpeta por categoría: al entrar a Productos se ven las cinco
+    # categorías; adentro de cada una están sus fichas. La carpeta define
+    # la categoría del producto, por eso no hay campo de categoría.
+    subfolders: true
     view:
       primary: nombre
-      fields: [nombre, sku, categoria]
+      fields: [nombre, sku]
       search: [nombre, sku, descripcion]
       sort: nombre
       order: asc
@@ -39,23 +43,6 @@ content:
         type: string
         required: true
         description: "Código único del producto; también es el nombre del archivo. Ej.: L02A00132"
-
-      - name: categoria
-        label: Categoría
-        type: select
-        required: true
-        options:
-          values:
-            - name: aires
-              label: Aires Acondicionados
-            - name: refrigeradores
-              label: Refrigeradores
-            - name: congeladores
-              label: Congeladores
-            - name: estufas
-              label: Estufas
-            - name: vitrinas
-              label: Vitrinas
 
       - name: descripcion
         label: Descripción corta

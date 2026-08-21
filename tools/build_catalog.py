@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
-"""Une data/categorias.json + data/productos/*.json en data/products.json,
-que es el archivo que carga el sitio.
+"""Une data/categorias.json + data/productos/<categoria>/*.json en
+data/products.json, que es el archivo que carga el sitio.
+
+La carpeta manda: un producto guardado en data/productos/congeladores/
+queda en la categoría "congeladores". Por eso en el CMS la categoría se
+elige entrando a su carpeta, no con un campo del formulario.
 
 Se ejecuta solo en GitHub Actions cada vez que el CMS guarda un cambio.
 Para correrlo a mano:  python3 tools/build_catalog.py
@@ -27,18 +31,25 @@ def main() -> int:
     ids_validos = set(orden_cat)
 
     productos, avisos = [], []
-    for ruta in sorted(FICHAS.glob("*.json")):
+    for ruta in sorted(FICHAS.rglob("*.json")):
         p = json.loads(ruta.read_text())
         sku = p.get("sku") or ruta.stem
         p["sku"] = sku
         p.setdefault("nombre", sku)
-        p.setdefault("categoria", "")
         p.setdefault("descripcion", "")
         p["imagenes"] = [i for i in (p.get("imagenes") or []) if i]
         p.setdefault("detalle", {})
 
+        # La categoría sale de la carpeta; si la ficha quedó suelta en
+        # data/productos/, se respeta el campo que traiga adentro.
+        carpeta = ruta.parent.name
+        p["categoria"] = carpeta if carpeta in ids_validos else p.get("categoria", "")
+
         if p["categoria"] not in ids_validos:
-            avisos.append(f"  {ruta.name}: categoría '{p['categoria']}' no existe")
+            avisos.append(
+                f"  {ruta.relative_to(FICHAS)}: sin categoría válida; "
+                f"movela a una carpeta ({', '.join(sorted(ids_validos))})"
+            )
 
         productos.append({k: p[k] for k in CAMPOS if k in p})
 
