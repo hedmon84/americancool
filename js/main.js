@@ -34,6 +34,26 @@ const TIENDAS = [
   }
 ];
 
+/* Distribuidores autorizados que venden productos AMERICANCOOL.
+   Los logos viven en assets/tiendas/. */
+const DISTRIBUIDORES = [
+  {
+    nombre: "La Comercial",
+    lema: "Un electrodoméstico al alcance de todos",
+    logo: "assets/tiendas/la-comercial.png"
+  },
+  {
+    nombre: "Refri Hogar",
+    lema: "Calidad y precio en un solo lugar",
+    logo: "assets/tiendas/refri-hogar.png"
+  },
+  {
+    nombre: "Distribuidora e Inversiones Hosanna",
+    lema: "Línea blanca para tu hogar y tu negocio",
+    logo: "assets/tiendas/hossana.png"
+  }
+];
+
 const enlaceComoLlegar = (t) =>
   `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`Mundi Ofertas ${t.ciudad}, Honduras`)}`;
 
@@ -57,6 +77,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   iniciarMenuMovil();
   iniciarCarrusel();
   iniciarWhatsAppGeneral();
+  renderizarDistribuidores();
   iniciarMapa();
 
   try {
@@ -180,6 +201,23 @@ function iniciarWhatsAppGeneral() {
   document.querySelectorAll(".btn--whatsapp").forEach((el) => {
     if (!el.querySelector("svg")) el.insertAdjacentHTML("afterbegin", ICONO_WA);
   });
+}
+
+/* ---------- Distribuidores (página ¿Dónde comprar?) ---------- */
+function renderizarDistribuidores() {
+  const cont = document.querySelector("[data-distribuidores]");
+  if (!cont) return;
+
+  cont.innerHTML = DISTRIBUIDORES.map(
+    (d) => `
+    <article class="distribuidor">
+      <div class="distribuidor__logo">
+        <img src="${d.logo}" alt="Logo de ${d.nombre}" loading="lazy">
+      </div>
+      <h3>${d.nombre}</h3>
+      <p>${d.lema}</p>
+    </article>`
+  ).join("");
 }
 
 /* ---------- Mapa de tiendas (sección Ubicación) ---------- */
