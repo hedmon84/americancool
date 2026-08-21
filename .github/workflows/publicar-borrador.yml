@@ -1,0 +1,43 @@
+name: Pasar el borrador a producción
+
+# Botón manual: toma todo lo aprobado en el sitio de prueba (rama borrador)
+# y lo publica en el sitio real (rama main).
+#
+# Cómo se usa: pestaña Actions > "Pasar el borrador a producción" >
+# botón "Run workflow".
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Unir el borrador con producción
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet origin/main origin/borrador; then
+            echo "El borrador no tiene cambios pendientes."
+            exit 0
+          fi
+
+          git merge --no-ff origin/borrador -m "Publica los cambios aprobados en el borrador"
+          git push origin main
+
+          # El borrador queda igual que producción para empezar limpio
+          git push origin main:borrador
+          echo "Publicado. El sitio real se actualiza en un par de minutos."

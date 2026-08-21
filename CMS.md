@@ -92,3 +92,23 @@ Si quieres que alguno de estos también se pueda editar desde el panel, se puede
 - Ese paso es automático. Si alguna vez quieres correrlo a mano: `python3 tools/build_catalog.py`.
 - Los banners no pasan por ese paso: la página de inicio lee `data/banners.json` directamente, así que un cambio de banner se ve apenas termina de publicarse.
 - **No edites `data/products.json` directamente**: se regenera solo y perderías el cambio.
+
+## Sitio de prueba (borrador)
+
+Además del sitio real hay un **sitio de prueba** con su propia dirección, para ver cómo queda un cambio antes de que lo vea un cliente. Los dos salen del mismo repositorio, pero de ramas distintas:
+
+| | Rama | Para qué |
+|---|---|---|
+| **Sitio real** | `main` | Lo que ve el público |
+| **Sitio de prueba** | `borrador` | Lo que estás preparando |
+
+El sitio de prueba se reconoce a simple vista: tiene un distintivo naranja abajo a la izquierda que dice **"Borrador · sitio de prueba"**, y está configurado para que Google no lo muestre en las búsquedas.
+
+### Cómo trabajar con él
+
+1. En el panel del CMS, arriba, hay un selector de rama. Elige **`borrador`**.
+2. Agrega o cambia lo que necesites y guarda como siempre.
+3. Mira el resultado en la dirección del sitio de prueba. El sitio real no se toca.
+4. Cuando esté aprobado: en GitHub, pestaña **Actions** > **"Pasar el borrador a producción"** > botón **Run workflow**. En un par de minutos está en el sitio real.
+
+> Si el selector quedó en `borrador`, **todo lo que guardes va al borrador**. Para publicar directo al sitio real, cambia el selector de vuelta a `main`.
