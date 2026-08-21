@@ -22,6 +22,10 @@
 
 html { scroll-behavior: smooth; }
 
+/* El encabezado queda fijo arriba: sin esto, al llegar por un enlace con
+   ancla el título de la sección queda escondido detrás. */
+:target, section[id] { scroll-margin-top: 84px; }
+
 body {
   font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
   color: var(--texto);
