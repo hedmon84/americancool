@@ -1,0 +1,31 @@
+{
+  "nombre": " test",
+  "sku": "test",
+  "descripcion": "es un test",
+  "imagenes": [
+    "assets/products/aires/L02A00132/main.jpg"
+  ],
+  "detalle": {
+    "descripcion": "prueba",
+    "especificaciones": [
+      {
+        "etiqueta": "prueba",
+        "valor": "14"
+      },
+      {
+        "etiqueta": "prueba",
+        "valor": "10"
+      },
+      {
+        "etiqueta": "tesrt",
+        "valor": "123"
+      }
+    ],
+    "adicionales": [
+      {
+        "etiqueta": "test",
+        "valor": "test"
+      }
+    ]
+  }
+}
