@@ -96,7 +96,21 @@ document.addEventListener("DOMContentLoaded", async () => {
   renderizarProductos();
   renderizarDetalleProducto();
   iniciarVisor();
+  irAlAncla();
 });
+
+/* Las categorías y los productos se dibujan después de cargar la página, así
+   que cuando alguien entra con un ancla (index.html#ubicacion) el navegador
+   ya saltó ahí antes de que existieran esas secciones: al aparecer, empujan
+   el contenido hacia abajo y uno termina en otro lado. Por eso, con todo ya
+   dibujado, se vuelve a apuntar al ancla. */
+function irAlAncla() {
+  const id = decodeURIComponent(location.hash.slice(1));
+  if (!id) return;
+  const destino = document.getElementById(id);
+  // Sin animación: se llega por enlace, no por un clic dentro de la página
+  if (destino) destino.scrollIntoView({ behavior: "instant", block: "start" });
+}
 
 /* Un producto recién creado en el CMS puede guardarse todavía sin fotos o sin
    detalle; se rellenan aquí para que ninguna página falle por eso. */
