@@ -31,7 +31,7 @@ En el menú lateral verás tres secciones:
 5. Llena la sección **Página de detalle** con las especificaciones.
 6. Haz clic en **Save**.
 
-El sitio se actualiza solo en **más o menos dos minutos** (primero se guarda la ficha y luego se reconstruye el catálogo). Si no ves el cambio, recarga con `Cmd+Shift+R` (Mac) o `Ctrl+F5` (Windows) para saltarte el caché del navegador.
+El sitio se actualiza solo en **más o menos dos minutos** (primero se guarda la ficha y luego se reconstruye el catálogo, la página del producto y el mapa del sitio). Puede tardar unos minutos más en verse porque las páginas quedan guardadas en la red de GitHub; si tienes prisa, recarga con `Cmd+Shift+R` (Mac) o `Ctrl+F5` (Windows).
 
 > Puedes guardar un producto aunque todavía no tengas las fotos o las especificaciones: mientras tanto se muestra una imagen de "Foto pendiente" y la página funciona con normalidad.
 
@@ -69,7 +69,9 @@ De ahí en adelante entra siempre igual: correo + código. No tiene que crear ni
 
 - **La carpeta manda.** Un producto guardado en la carpeta `congeladores` sale en la categoría Congeladores. Por eso la ficha ya no tiene un campo de categoría: para cambiar un equipo de categoría hay que volver a crearlo en la carpeta correcta (o pedir que se mueva el archivo).
 - **No cambies el "Identificador" de una categoría** (`aires`, `vitrinas`, etc.) si ya hay productos usándola: es el nombre de su carpeta y se romperían los filtros del catálogo. El "Nombre visible" sí se puede cambiar sin problema.
-- **El SKU debe ser único.** Identifica al producto en la dirección de su página de detalle y además da nombre a su ficha. Si repites un SKU, el sitio **no se actualiza** (se queda con la última versión buena) y GitHub te avisa por correo del error; corrige el SKU y se publica solo.
+- **El SKU debe ser único.** Identifica al producto y da nombre a su ficha. Si repites un SKU, el sitio **no se actualiza** (se queda con la última versión buena) y GitHub te avisa por correo del error; corrige el SKU y se publica solo.
+- **Cada producto tiene su propia página**, con una dirección hecha a partir de su nombre (por ejemplo `aire-acondicionado-split-18-000-btu.html`). Se genera sola al guardar, con el título y la foto del producto: por eso al compartir el enlace por WhatsApp se ve ese equipo y no una imagen genérica. Si cambias el nombre del producto, cambia la dirección; los enlaces viejos que hayas compartido dejan de funcionar.
+- **Fotos:** cuadradas, con el producto sobre fondo blanco o transparente, y por debajo de 900 KB. Si subes una más pesada el sitio se publica igual, pero queda un aviso en el registro y la página carga lenta. Para arreglar las que ya están: `python3 tools/optimize_images.py`.
 - Cada cambio queda guardado en el historial de GitHub, así que **siempre se puede volver atrás** si algo sale mal.
 
 ## Qué NO se edita todavía desde el panel
@@ -85,7 +87,8 @@ Si quieres que alguno de estos también se pueda editar desde el panel, se puede
 ## Cómo funciona por dentro (por si algún día hace falta)
 
 - Cada producto es un archivo en `data/productos/<categoria>/<SKU>.json`; las categorías están en `data/categorias.json` y los banners en `data/banners.json`.
-- Al guardar, GitHub ejecuta `tools/build_catalog.py`, que une todo en `data/products.json`, que es el único archivo que carga el sitio. Por eso la página sigue siendo rápida aunque haya muchos productos.
+- Al guardar, GitHub ejecuta `tools/build_catalog.py`, que revisa las fichas y genera tres cosas: `data/products.json` (el catálogo que carga el sitio), una página `.html` por producto y `sitemap.xml` (el mapa para los buscadores).
+- Ese mismo paso es el que frena una publicación rota: si hay un SKU repetido, una ficha fuera de las carpetas de categoría o un archivo dañado, no publica nada y el sitio se queda con la última versión buena.
 - Ese paso es automático. Si alguna vez quieres correrlo a mano: `python3 tools/build_catalog.py`.
 - Los banners no pasan por ese paso: la página de inicio lee `data/banners.json` directamente, así que un cambio de banner se ve apenas termina de publicarse.
 - **No edites `data/products.json` directamente**: se regenera solo y perderías el cambio.

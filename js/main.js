@@ -81,7 +81,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   iniciarMapa();
 
   try {
-    const resp = await fetch("data/products.json");
+    // "no-cache" no desactiva el caché: obliga al navegador a preguntar si
+    // el catálogo cambió. Sin esto seguía mostrando la lista vieja después
+    // de agregar un producto en el CMS.
+    const resp = await fetch("data/products.json", { cache: "no-cache" });
     DATOS = normalizar(await resp.json());
   } catch (e) {
     console.error("No se pudo cargar data/products.json", e);
@@ -128,7 +131,7 @@ function iniciarMenuMovil() {
 /* Los banners viven en data/banners.json y se editan desde el CMS. */
 async function cargarBanners() {
   try {
-    const resp = await fetch("data/banners.json");
+    const resp = await fetch("data/banners.json", { cache: "no-cache" });
     const datos = await resp.json();
     return (datos.banners || []).filter((b) => b && b.imagen && b.activo !== false);
   } catch (e) {
@@ -323,6 +326,12 @@ function renderizarFiltros() {
 }
 
 /* ---------- Rejilla de productos ---------- */
+/* build_catalog.py le da a cada producto su propia página. Si el catálogo
+   todavía no la trae, se usa el enlace de siempre. */
+function enlaceProducto(p) {
+  return p.url || `producto.html?sku=${encodeURIComponent(p.sku)}`;
+}
+
 function nombreCategoria(id) {
   const cat = DATOS.categorias.find((c) => c.id === id);
   return cat ? cat.nombre : id;
@@ -330,7 +339,7 @@ function nombreCategoria(id) {
 
 function tarjetaHTML(p) {
   const mensaje = `Hola, quisiera más información sobre ${p.nombre} (SKU: ${p.sku}).`;
-  const urlDetalle = `producto.html?sku=${encodeURIComponent(p.sku)}`;
+  const urlDetalle = enlaceProducto(p);
   return `
   <article class="tarjeta">
     <a class="tarjeta__imagen" href="${urlDetalle}" aria-label="Ver detalle de ${p.nombre}">
@@ -370,7 +379,8 @@ function renderizarDetalleProducto() {
   const cont = document.querySelector("[data-detalle-producto]");
   if (!cont) return;
 
-  const sku = new URLSearchParams(location.search).get("sku");
+  const sku =
+    document.body.dataset.sku || new URLSearchParams(location.search).get("sku");
   const p = DATOS.productos.find((x) => x.sku === sku);
 
   if (!p) {

@@ -33,7 +33,7 @@
       "nombre": "Aire Acondicionado Split 18,000 BTU",
       "descripcion": "Gas R410 · SEER 13. Dimensiones: 29 × 85 × 19 cm.",
       "imagenes": [
-        "assets/products/aires/L02A00132/01.png"
+        "assets/products/aires/L02A00132/01.jpg"
       ],
       "detalle": {
         "descripcion": "Aire acondicionado tipo mini split de 18,000 BTU, ideal para salas, comercios y habitaciones amplias de hasta 40 m². Funciona con gas ecológico R410A y eficiencia SEER 13, para un enfriamiento potente con menor consumo de energía. Incluye control remoto y filtro lavable de fácil mantenimiento.",
@@ -101,7 +101,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "aire-acondicionado-split-18-000-btu.html"
     },
     {
       "sku": "L02A00134",
@@ -109,7 +110,7 @@
       "nombre": "Aire Acondicionado Split 24,000 BTU",
       "descripcion": "Gas R410 · SEER 13. Dimensiones: 30.5 × 95 × 22 cm.",
       "imagenes": [
-        "assets/products/aires/L02A00134/01.png"
+        "assets/products/aires/L02A00134/01.jpg"
       ],
       "detalle": {
         "descripcion": "El equipo más potente de la línea: mini split de 24,000 BTU para espacios grandes de hasta 55 m², como salones, oficinas y locales comerciales. Con gas ecológico R410A y eficiencia SEER 13, enfría rápido manteniendo el consumo bajo control. Incluye control remoto y filtro lavable.",
@@ -177,7 +178,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "aire-acondicionado-split-24-000-btu.html"
     },
     {
       "sku": "L02A00136",
@@ -185,7 +187,7 @@
       "nombre": "Aire Acondicionado Split 12,000 BTU",
       "descripcion": "Gas R410 · SEER 13. Dimensiones: 28 × 79.5 × 17.5 cm.",
       "imagenes": [
-        "assets/products/aires/L02A00136/01.png"
+        "assets/products/aires/L02A00136/01.jpg"
       ],
       "detalle": {
         "descripcion": "Mini split de 12,000 BTU, perfecto para dormitorios y espacios de hasta 25 m². Con gas ecológico R410A y eficiencia SEER 13, ofrece un clima fresco y silencioso con bajo consumo eléctrico. Incluye control remoto y filtro lavable de fácil mantenimiento.",
@@ -253,39 +255,8 @@
             "valor": "1 año"
           }
         ]
-      }
-    },
-    {
-      "sku": "test",
-      "categoria": "aires",
-      "nombre": " test",
-      "descripcion": "es un test",
-      "imagenes": [
-        "assets/products/aires/L02A00132/main.jpg"
-      ],
-      "detalle": {
-        "descripcion": "prueba",
-        "especificaciones": [
-          {
-            "etiqueta": "prueba",
-            "valor": "14"
-          },
-          {
-            "etiqueta": "prueba",
-            "valor": "10"
-          },
-          {
-            "etiqueta": "tesrt",
-            "valor": "123"
-          }
-        ],
-        "adicionales": [
-          {
-            "etiqueta": "test",
-            "valor": "test"
-          }
-        ]
-      }
+      },
+      "url": "aire-acondicionado-split-12-000-btu.html"
     },
     {
       "sku": "L02R00411",
@@ -293,9 +264,9 @@
       "nombre": "Refrigerador Side by Side 16 Pies",
       "descripcion": "Modelo ARSS1530SS. 2 puertas, sin escarcha, con dispensador de agua.",
       "imagenes": [
-        "assets/products/refrigeradores/L02R00411/01.png",
-        "assets/products/refrigeradores/L02R00411/02.png",
-        "assets/products/refrigeradores/L02R00411/03.png"
+        "assets/products/refrigeradores/L02R00411/01.jpg",
+        "assets/products/refrigeradores/L02R00411/02.jpg",
+        "assets/products/refrigeradores/L02R00411/03.jpg"
       ],
       "detalle": {
         "descripcion": "Refrigerador side by side de 16 pies³ (modelo ARSS1530SS) con congelador y refrigerador lado a lado, tecnología sin escarcha (no frost) y dispensador de agua en la puerta. Su acabado en acero inoxidable le da un toque moderno a cualquier cocina, y sus parrillas ajustables permiten organizar el espacio a tu gusto.",
@@ -363,7 +334,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "refrigerador-side-by-side-16-pies.html"
     },
     {
       "sku": "L02FR00123",
@@ -372,8 +344,8 @@
       "descripcion": "Triple función. Dimensiones: 85 × 194 × 75 cm.",
       "imagenes": [
         "assets/products/congeladores/L02FR00123/01.jpg",
-        "assets/products/congeladores/L02FR00123/02.png",
-        "assets/products/congeladores/L02FR00123/03.png"
+        "assets/products/congeladores/L02FR00123/02.jpg",
+        "assets/products/congeladores/L02FR00123/03.jpg"
       ],
       "detalle": {
         "descripcion": "El congelador más grande de la línea: 26 pies³ de capacidad con dos puertas independientes, ideal para negocios, pulperías y familias grandes. Su sistema de triple función permite usarlo como congelador, enfriador o conservador, y las paredes tipo frozen wall congelan de manera uniforme en todo el interior.",
@@ -445,7 +417,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "congelador-26-pies-2-puertas.html"
     },
     {
       "sku": "L02FR00314",
@@ -453,8 +426,8 @@
       "nombre": "Congelador 18 Pies · 2 Puertas",
       "descripcion": "Doble función.",
       "imagenes": [
-        "assets/products/congeladores/L02FR00314/01.png",
-        "assets/products/congeladores/L02FR00314/02.png"
+        "assets/products/congeladores/L02FR00314/01.jpg",
+        "assets/products/congeladores/L02FR00314/02.jpg"
       ],
       "detalle": {
         "descripcion": "Congelador horizontal de 18 pies³ con dos puertas, pensado para hogares y negocios que necesitan buen espacio de almacenamiento. Su doble función permite alternar entre congelar y enfriar según la temporada, con paredes frozen wall que distribuyen el frío de forma pareja.",
@@ -526,7 +499,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "congelador-18-pies-2-puertas.html"
     },
     {
       "sku": "L02FR00315",
@@ -534,8 +508,8 @@
       "nombre": "Congelador 21 Pies · 2 Puertas",
       "descripcion": "Triple función. Dimensiones: 80 × 179 × 68 cm.",
       "imagenes": [
-        "assets/products/congeladores/L02FR00315/01.png",
-        "assets/products/congeladores/L02FR00315/02.png"
+        "assets/products/congeladores/L02FR00315/01.jpg",
+        "assets/products/congeladores/L02FR00315/02.jpg"
       ],
       "detalle": {
         "descripcion": "Congelador horizontal de 21 pies³ con dos puertas y sistema de triple función: congela, enfría o conserva según lo que necesites. Ideal para negocios de alimentos y hogares grandes. Incluye cerradura de seguridad, drenaje interno y canastas de alambrón anticorrosivo.",
@@ -607,7 +581,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "congelador-21-pies-2-puertas.html"
     },
     {
       "sku": "L02FR00316",
@@ -615,8 +590,8 @@
       "nombre": "Congelador 12 Pies · 1 Puerta",
       "descripcion": "Doble función.",
       "imagenes": [
-        "assets/products/congeladores/L02FR00316/01.png",
-        "assets/products/congeladores/L02FR00316/02.png"
+        "assets/products/congeladores/L02FR00316/01.jpg",
+        "assets/products/congeladores/L02FR00316/02.jpg"
       ],
       "detalle": {
         "descripcion": "Congelador horizontal de 12 pies³ y una puerta, compacto y rendidor, ideal para el hogar o negocios pequeños. Con doble función para usarlo como congelador o enfriador, cerradura de seguridad y drenaje interno que facilita la limpieza.",
@@ -688,7 +663,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "congelador-12-pies-1-puerta.html"
     },
     {
       "sku": "L02FR00317",
@@ -696,8 +672,8 @@
       "nombre": "Congelador 15 Pies · 2 Puertas",
       "descripcion": "Triple función.",
       "imagenes": [
-        "assets/products/congeladores/L02FR00317/01.png",
-        "assets/products/congeladores/L02FR00317/02.png"
+        "assets/products/congeladores/L02FR00317/01.jpg",
+        "assets/products/congeladores/L02FR00317/02.jpg"
       ],
       "detalle": {
         "descripcion": "Congelador horizontal de 15 pies³ con dos puertas y triple función: congela, enfría o conserva según lo necesites. Un tamaño intermedio muy versátil para el hogar o el negocio, con cerradura, drenaje interno y canastas de alambrón anticorrosivo.",
@@ -769,7 +745,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "congelador-15-pies-2-puertas.html"
     },
     {
       "sku": "L02FR00938",
@@ -777,7 +754,7 @@
       "nombre": "Congelador 10.3 Pies · Puertas de Vidrio",
       "descripcion": "Doble función, puertas corredizas de vidrio.",
       "imagenes": [
-        "assets/products/congeladores/L02FR00938/01.png"
+        "assets/products/congeladores/L02FR00938/01.jpg"
       ],
       "detalle": {
         "descripcion": "Congelador exhibidor de 10.3 pies³ con puertas corredizas de vidrio, perfecto para mostrar helados, paletas y productos congelados en tu negocio. Su doble función permite usarlo también como enfriador, y las canastas de alambrón mantienen el producto ordenado y a la vista.",
@@ -845,7 +822,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "congelador-10-3-pies-puertas-de-vidrio.html"
     },
     {
       "sku": "L02FR00939",
@@ -853,7 +831,7 @@
       "nombre": "Congelador 12 Pies · Puertas de Vidrio",
       "descripcion": "Doble función, puertas corredizas de vidrio.",
       "imagenes": [
-        "assets/products/congeladores/L02FR00939/01.png"
+        "assets/products/congeladores/L02FR00939/01.jpg"
       ],
       "detalle": {
         "descripcion": "Congelador exhibidor de 12 pies³ con puertas corredizas de vidrio, ideal para pulperías, heladerías y supermercados. Exhibe el producto congelado a la vista del cliente, con doble función para alternar entre congelar y enfriar, y canastas de alambrón anticorrosivo.",
@@ -921,7 +899,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "congelador-12-pies-puertas-de-vidrio.html"
     },
     {
       "sku": "L02E00322",
@@ -929,11 +908,11 @@
       "nombre": "Estufa de Gas 30\" · 6 Quemadores (Negra)",
       "descripcion": "Quemadores de hierro colado, superficie de acero inoxidable, luz y chispero. Dimensiones: 92 × 51 × 58 cm.",
       "imagenes": [
-        "assets/products/estufas/L02E00322/01.png",
-        "assets/products/estufas/L02E00322/02.png",
-        "assets/products/estufas/L02E00322/03.png",
-        "assets/products/estufas/L02E00322/04.png",
-        "assets/products/estufas/L02E00322/05.png"
+        "assets/products/estufas/L02E00322/01.jpg",
+        "assets/products/estufas/L02E00322/02.jpg",
+        "assets/products/estufas/L02E00322/03.jpg",
+        "assets/products/estufas/L02E00322/04.jpg",
+        "assets/products/estufas/L02E00322/05.jpg"
       ],
       "detalle": {
         "descripcion": "Estufa de gas de 30 pulgadas en acabado negro con 6 quemadores de hierro colado que distribuyen el calor de manera uniforme y resisten el uso diario. Cuenta con superficie de acero inoxidable fácil de limpiar, encendido por chispero eléctrico y horno amplio con luz interior.",
@@ -1001,7 +980,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "estufa-de-gas-30-6-quemadores-negra.html"
     },
     {
       "sku": "L02E00323",
@@ -1009,11 +989,11 @@
       "nombre": "Estufa de Gas 30\" · 6 Quemadores (Inoxidable)",
       "descripcion": "Quemadores de hierro colado, superficie de acero inoxidable, luz y chispero. Dimensiones: 92 × 51 × 58 cm.",
       "imagenes": [
-        "assets/products/estufas/L02E00323/01.png",
-        "assets/products/estufas/L02E00323/02.png",
-        "assets/products/estufas/L02E00323/03.png",
-        "assets/products/estufas/L02E00323/04.png",
-        "assets/products/estufas/L02E00323/05.png"
+        "assets/products/estufas/L02E00323/01.jpg",
+        "assets/products/estufas/L02E00323/02.jpg",
+        "assets/products/estufas/L02E00323/03.jpg",
+        "assets/products/estufas/L02E00323/04.jpg",
+        "assets/products/estufas/L02E00323/05.jpg"
       ],
       "detalle": {
         "descripcion": "Estufa de gas de 30 pulgadas en acabado de acero inoxidable con 6 quemadores de hierro colado, ideal para cocinas que exigen rendimiento y estilo. Superficie fácil de limpiar, encendido por chispero eléctrico y horno amplio con luz interior y ventana para vigilar la cocción.",
@@ -1081,7 +1061,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "estufa-de-gas-30-6-quemadores-inoxidable.html"
     },
     {
       "sku": "L02FR00102",
@@ -1089,11 +1070,11 @@
       "nombre": "Vitrina Refrigerante 12 Pies · 1 Puerta",
       "descripcion": "Luz LED e indicador de temperatura. Dimensiones: 199 × 61 × 59 cm.",
       "imagenes": [
-        "assets/products/vitrinas/L02FR00102/01.png",
-        "assets/products/vitrinas/L02FR00102/02.png",
+        "assets/products/vitrinas/L02FR00102/01.jpg",
+        "assets/products/vitrinas/L02FR00102/02.jpg",
         "assets/products/vitrinas/L02FR00102/03.jpg",
-        "assets/products/vitrinas/L02FR00102/04.png",
-        "assets/products/vitrinas/L02FR00102/05.png",
+        "assets/products/vitrinas/L02FR00102/04.jpg",
+        "assets/products/vitrinas/L02FR00102/05.jpg",
         "assets/products/vitrinas/L02FR00102/06.jpg",
         "assets/products/vitrinas/L02FR00102/07.jpg"
       ],
@@ -1163,7 +1144,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "vitrina-refrigerante-12-pies-1-puerta.html"
     },
     {
       "sku": "L02FR00326",
@@ -1171,10 +1153,10 @@
       "nombre": "Vitrina Refrigerante 25 Pies · 2 Puertas",
       "descripcion": "Termómetro, enfría hasta 0 °C. Dimensiones: 194 × 99 × 56 cm.",
       "imagenes": [
-        "assets/products/vitrinas/L02FR00326/01.png",
-        "assets/products/vitrinas/L02FR00326/02.png",
-        "assets/products/vitrinas/L02FR00326/03.png",
-        "assets/products/vitrinas/L02FR00326/04.png",
+        "assets/products/vitrinas/L02FR00326/01.jpg",
+        "assets/products/vitrinas/L02FR00326/02.jpg",
+        "assets/products/vitrinas/L02FR00326/03.jpg",
+        "assets/products/vitrinas/L02FR00326/04.jpg",
         "assets/products/vitrinas/L02FR00326/05.jpg"
       ],
       "detalle": {
@@ -1243,7 +1225,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "vitrina-refrigerante-25-pies-2-puertas.html"
     },
     {
       "sku": "L02FR00327",
@@ -1251,10 +1234,10 @@
       "nombre": "Vitrina Refrigerante 35 Pies · 2 Puertas",
       "descripcion": "Termómetro, enfría hasta 0 °C. Dimensiones: 196 × 119 × 57.5 cm.",
       "imagenes": [
-        "assets/products/vitrinas/L02FR00327/01.png",
-        "assets/products/vitrinas/L02FR00327/02.png",
-        "assets/products/vitrinas/L02FR00327/03.png",
-        "assets/products/vitrinas/L02FR00327/04.png",
+        "assets/products/vitrinas/L02FR00327/01.jpg",
+        "assets/products/vitrinas/L02FR00327/02.jpg",
+        "assets/products/vitrinas/L02FR00327/03.jpg",
+        "assets/products/vitrinas/L02FR00327/04.jpg",
         "assets/products/vitrinas/L02FR00327/05.jpg"
       ],
       "detalle": {
@@ -1323,7 +1306,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "vitrina-refrigerante-35-pies-2-puertas.html"
     },
     {
       "sku": "L02FR00328",
@@ -1331,12 +1315,12 @@
       "nombre": "Vitrina Refrigerante 40 Pies · 3 Puertas",
       "descripcion": "Termómetro y luz LED. Dimensiones: 202 × 150 × 55 cm.",
       "imagenes": [
-        "assets/products/vitrinas/L02FR00328/01.png",
-        "assets/products/vitrinas/L02FR00328/02.png",
-        "assets/products/vitrinas/L02FR00328/03.png",
+        "assets/products/vitrinas/L02FR00328/01.jpg",
+        "assets/products/vitrinas/L02FR00328/02.jpg",
+        "assets/products/vitrinas/L02FR00328/03.jpg",
         "assets/products/vitrinas/L02FR00328/04.jpg",
-        "assets/products/vitrinas/L02FR00328/05.png",
-        "assets/products/vitrinas/L02FR00328/06.png"
+        "assets/products/vitrinas/L02FR00328/05.jpg",
+        "assets/products/vitrinas/L02FR00328/06.jpg"
       ],
       "detalle": {
         "descripcion": "La vitrina más grande de la línea: 40 pies³ y tres puertas de vidrio para una exhibición masiva de bebidas y productos fríos. Con termómetro, luz LED y parrillas ajustables, es la aliada perfecta de supermercados, depósitos y negocios de alto movimiento.",
@@ -1404,7 +1388,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "vitrina-refrigerante-40-pies-3-puertas.html"
     },
     {
       "sku": "L02FR00329",
@@ -1412,11 +1397,11 @@
       "nombre": "Vitrina Refrigerante 10 Pies · 1 Puerta",
       "descripcion": "Luz LED. Dimensiones: 173 × 60 × 59 cm.",
       "imagenes": [
-        "assets/products/vitrinas/L02FR00329/01.png",
-        "assets/products/vitrinas/L02FR00329/02.png",
+        "assets/products/vitrinas/L02FR00329/01.jpg",
+        "assets/products/vitrinas/L02FR00329/02.jpg",
         "assets/products/vitrinas/L02FR00329/03.jpg",
         "assets/products/vitrinas/L02FR00329/04.jpg",
-        "assets/products/vitrinas/L02FR00329/05.png"
+        "assets/products/vitrinas/L02FR00329/05.jpg"
       ],
       "detalle": {
         "descripcion": "Vitrina refrigerante compacta de 10 pies³ con puerta de vidrio y luz LED, perfecta para pulperías y negocios con espacio reducido. Exhibe bebidas y productos fríos de forma atractiva, con parrillas ajustables y bajo consumo de energía.",
@@ -1480,7 +1465,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "vitrina-refrigerante-10-pies-1-puerta.html"
     },
     {
       "sku": "L02FR00934",
@@ -1488,8 +1474,8 @@
       "nombre": "Vitrina Refrigerante 10 Pies · 1 Puerta",
       "descripcion": "Luz LED, enfría hasta 0 °C. Dimensiones: 177 × 57.5 × 50.5 cm.",
       "imagenes": [
-        "assets/products/vitrinas/L02FR00934/01.png",
-        "assets/products/vitrinas/L02FR00934/02.png",
+        "assets/products/vitrinas/L02FR00934/01.jpg",
+        "assets/products/vitrinas/L02FR00934/02.jpg",
         "assets/products/vitrinas/L02FR00934/03.jpg"
       ],
       "detalle": {
@@ -1554,7 +1540,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "vitrina-refrigerante-10-pies-1-puerta-l02fr00934.html"
     },
     {
       "sku": "L02FR00941",
@@ -1562,8 +1549,8 @@
       "nombre": "Vitrina Refrigerante 20 Pies · 2 Puertas",
       "descripcion": "Luz LED y termómetro. Dimensiones: 194 × 78 × 57 cm.",
       "imagenes": [
-        "assets/products/vitrinas/L02FR00941/01.png",
-        "assets/products/vitrinas/L02FR00941/02.png",
+        "assets/products/vitrinas/L02FR00941/01.jpg",
+        "assets/products/vitrinas/L02FR00941/02.jpg",
         "assets/products/vitrinas/L02FR00941/03.jpg"
       ],
       "detalle": {
@@ -1632,7 +1619,8 @@
             "valor": "1 año"
           }
         ]
-      }
+      },
+      "url": "vitrina-refrigerante-20-pies-2-puertas.html"
     }
   ]
 }

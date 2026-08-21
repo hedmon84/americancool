@@ -23,15 +23,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 1. Regenerar data/products.json a partir de las fichas del CMS
+      # 1. Regenerar el catálogo, las páginas de producto y el sitemap
+      #    a partir de las fichas del CMS. Si algo está mal, falla aquí y
+      #    el sitio se queda con la última versión buena.
       - name: Generar catálogo
         run: python3 tools/build_catalog.py
 
-      - name: Guardar el catálogo si cambió
+      - name: Guardar lo generado si cambió
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/products.json
+          git add -A -- data/products.json sitemap.xml '*.html'
           if git diff --staged --quiet; then
             echo "Catálogo sin cambios."
           else
