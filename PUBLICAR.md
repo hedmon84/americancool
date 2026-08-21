@@ -37,6 +37,8 @@ El sitio de prueba vive en **Cloudflare Pages**, conectado al mismo repositorio 
 
 Cloudflare trae Python incluido en su imagen de compilación, así que no hay que configurar nada más.
 
+> **Ojo con la rama de producción del proyecto.** Cloudflare corre `wrangler deploy` (publica de verdad) solo cuando el cambio llega a la rama que tiene marcada como producción; en cualquier otra rama corre `wrangler versions upload`, que sube la versión pero **no la pone en línea**. En **Settings > Build** la rama de producción del proyecto tiene que ser `borrador`.
+>
 > **La carpeta que se publica sale de `wrangler.jsonc`, no del panel.** Ese archivo, en la raíz del repositorio, es el que le dice a Cloudflare que suba únicamente `_sitio/`. Sin él, Cloudflare sube el repositorio completo —incluida la carpeta `.git` y las fichas del CMS— y sin la marca de borrador. Si alguna vez el sitio de prueba aparece sin el distintivo naranja, es señal de que se está publicando la raíz.
 
 > Por defecto Cloudflare compila **todas** las ramas, así que `main` también quedaría con una dirección de vista previa. Si no se quiere, en **Settings > Builds & deployments > Branch control** dejar solo `borrador`.

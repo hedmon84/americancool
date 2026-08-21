@@ -14,7 +14,11 @@
   "assets": {
     "directory": "./_sitio/",
     // Una dirección que no existe muestra nuestra página 404
-    "not_found_handling": "404-page"
+    "not_found_handling": "404-page",
+    // Servir las direcciones tal cual, con su .html. Por defecto Cloudflare
+    // redirige /catalogo.html a /catalogo, y entonces el borrador dejaría de
+    // ser un espejo exacto del sitio real, que corre en GitHub Pages.
+    "html_handling": "none"
   },
   // Direcciones temporales por cada versión: no hacen falta y multiplican
   // las copias del sitio dando vueltas
