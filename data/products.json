@@ -256,6 +256,38 @@
       }
     },
     {
+      "sku": "test",
+      "categoria": "aires",
+      "nombre": " test",
+      "descripcion": "es un test",
+      "imagenes": [
+        "assets/products/aires/L02A00132/main.jpg"
+      ],
+      "detalle": {
+        "descripcion": "prueba",
+        "especificaciones": [
+          {
+            "etiqueta": "prueba",
+            "valor": "14"
+          },
+          {
+            "etiqueta": "prueba",
+            "valor": "10"
+          },
+          {
+            "etiqueta": "tesrt",
+            "valor": "123"
+          }
+        ],
+        "adicionales": [
+          {
+            "etiqueta": "test",
+            "valor": "test"
+          }
+        ]
+      }
+    },
+    {
       "sku": "L02R00411",
       "categoria": "refrigeradores",
       "nombre": "Refrigerador Side by Side 16 Pies",
