@@ -203,6 +203,16 @@ a { color: var(--azul); text-decoration: none; }
 }
 .historia__paso h3 { color: var(--azul-oscuro); font-size: 1.08rem; margin-bottom: 0.35rem; }
 .historia__paso p { color: var(--gris-texto); font-size: 0.98rem; }
+.historia__cierre {
+  max-width: 780px; margin: 1.8rem auto 0;
+  background: var(--gris-fondo); border-radius: var(--radio);
+  padding: 1.4rem 1.6rem; text-align: center;
+}
+.historia__cierre p { color: var(--gris-texto); font-size: 0.98rem; }
+.historia__lema {
+  color: var(--azul-oscuro); font-weight: 800; font-size: 1.05rem;
+  line-height: 1.4; margin-top: 0.8rem;
+}
 
 /* ---------- Valores ---------- */
 .valores {
