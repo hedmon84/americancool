@@ -1,0 +1,22 @@
+{
+  // Sitio de prueba (borrador) en Cloudflare.
+  //
+  // Sin este archivo, Cloudflare sube el repositorio completo —incluidos
+  // .git y las fichas del CMS— y sin la marca de borrador. Aquí se le dice
+  // que publique únicamente la carpeta _sitio/, que es la que arma
+  // tools/build_borrador.sh.
+  //
+  // En el panel de Cloudflare:
+  //   Build command:   bash tools/build_borrador.sh
+  //   Deploy command:  npx wrangler deploy
+  "name": "americancool-borrador",
+  "compatibility_date": "2026-08-21",
+  "assets": {
+    "directory": "./_sitio/",
+    // Una dirección que no existe muestra nuestra página 404
+    "not_found_handling": "404-page"
+  },
+  // Direcciones temporales por cada versión: no hacen falta y multiplican
+  // las copias del sitio dando vueltas
+  "preview_urls": false
+}

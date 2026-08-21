@@ -5,9 +5,11 @@ Trabaja sobre la carpeta que se le pasa (normalmente _sitio/), nunca sobre
 el repositorio, así que no hay forma de publicar el sitio real con la marca
 de borrador puesta.
 
-Hace tres cosas:
+Hace cuatro cosas:
   - pone un distintivo visible en cada página
   - deja robots.txt en noindex, para que no aparezca en los buscadores
+  - agrega la cabecera X-Robots-Tag: noindex, que los buscadores respetan
+    aunque nunca lean el robots.txt
   - borra sitemap.xml, que solo tiene sentido en el sitio real
 
 Uso:  python3 tools/marcar_borrador.py _sitio
@@ -30,6 +32,10 @@ ROBOTS = (
     "Disallow: /\n"
 )
 
+# Segunda barrera, por si algún buscador llega a una página sin pasar por
+# robots.txt. Cloudflare lee este archivo y lo convierte en cabeceras.
+CABECERAS = "/*\n  X-Robots-Tag: noindex, nofollow\n"
+
 
 def main() -> int:
     if len(sys.argv) != 2:
@@ -42,6 +48,7 @@ def main() -> int:
         return 1
 
     (carpeta / "robots.txt").write_text(ROBOTS)
+    (carpeta / "_headers").write_text(CABECERAS)
     sitemap = carpeta / "sitemap.xml"
     if sitemap.exists():
         sitemap.unlink()
@@ -54,7 +61,7 @@ def main() -> int:
         pagina.write_text(texto.replace("</body>", DISTINTIVO + "</body>", 1))
         marcadas += 1
 
-    print(f"Borrador: {marcadas} páginas marcadas, robots.txt en noindex")
+    print(f"Borrador: {marcadas} páginas marcadas, robots.txt y _headers en noindex")
     return 0
 
 

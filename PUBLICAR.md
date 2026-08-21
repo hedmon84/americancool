@@ -29,14 +29,15 @@ El sitio de prueba vive en **Cloudflare Pages**, conectado al mismo repositorio 
 | Campo | Valor |
 |---|---|
 | Project name | `americancool-borrador` |
-| Production branch | `borrador` |
-| Framework preset | None |
+| Branch | `borrador` |
 | Build command | `bash tools/build_borrador.sh` |
-| Build output directory | `_sitio` |
+| Deploy command | `npx wrangler deploy` |
 
-4. **Save and Deploy**. En un par de minutos queda en `https://americancool-borrador.pages.dev`.
+4. **Save and Deploy**. En un par de minutos queda en línea.
 
 Cloudflare trae Python incluido en su imagen de compilación, así que no hay que configurar nada más.
+
+> **La carpeta que se publica sale de `wrangler.jsonc`, no del panel.** Ese archivo, en la raíz del repositorio, es el que le dice a Cloudflare que suba únicamente `_sitio/`. Sin él, Cloudflare sube el repositorio completo —incluida la carpeta `.git` y las fichas del CMS— y sin la marca de borrador. Si alguna vez el sitio de prueba aparece sin el distintivo naranja, es señal de que se está publicando la raíz.
 
 > Por defecto Cloudflare compila **todas** las ramas, así que `main` también quedaría con una dirección de vista previa. Si no se quiere, en **Settings > Builds & deployments > Branch control** dejar solo `borrador`.
 >
@@ -44,7 +45,16 @@ Cloudflare trae Python incluido en su imagen de compilación, así que no hay qu
 
 ### Qué hace `tools/build_borrador.sh`
 
-Corre el mismo build del sitio real —con las mismas validaciones—, copia a `_sitio/` solo lo que el visitante necesita (nada de `tools/`, fichas del CMS ni documentación) y sobre esa copia aplica la marca de borrador: el distintivo naranja en pantalla y el `robots.txt` en `Disallow`. **El repositorio nunca se modifica**, así que no hay forma de publicar el sitio real con la marca puesta.
+Corre el mismo build del sitio real —con las mismas validaciones—, copia a `_sitio/` solo lo que el visitante necesita (nada de `tools/`, fichas del CMS ni documentación) y sobre esa copia aplica la marca de borrador: el distintivo naranja en pantalla, el `robots.txt` en `Disallow` y la cabecera `X-Robots-Tag: noindex`. **El repositorio nunca se modifica**, así que no hay forma de publicar el sitio real con la marca puesta.
+
+Cómo comprobar que el borrador quedó bien publicado:
+
+```
+curl -s https://<dirección-del-borrador>/robots.txt      # debe decir Disallow: /
+curl -s -o /dev/null -w "%{http_code}" https://<dirección-del-borrador>/.git/config   # debe dar 404
+```
+
+Y a simple vista: el distintivo naranja abajo a la izquierda.
 
 Para verlo en la computadora:
 
