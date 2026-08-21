@@ -22,18 +22,10 @@ Para correrlo a mano:  python3 tools/build_catalog.py
 """
 import html
 import json
-import os
 import pathlib
 import re
 import sys
 import unicodedata
-
-# "produccion" (el sitio real) o "borrador" (el sitio de prueba). El sitio
-# de prueba se marca con un distintivo en pantalla y se le pide a Google que
-# no lo indexe. Se define con la variable de entorno ENTORNO en el panel del
-# servicio que publica el borrador; corriendo el script a mano no cambia nada.
-ENTORNO = os.environ.get("ENTORNO", "produccion")
-ES_BORRADOR = ENTORNO != "produccion"
 
 # ⚠️ CAMBIAR AQUÍ al montar el dominio propio: https://americancool.hn
 # Se usa para las direcciones absolutas que piden WhatsApp, Facebook y
@@ -226,37 +218,6 @@ def generar_sitemap(productos):
     SITEMAP.write_text("\n".join(lineas) + "\n")
 
 
-DISTINTIVO = """
-<div style="position:fixed;left:12px;bottom:12px;z-index:9999;
-  background:#9a6700;color:#fff;font:600 13px/1.2 system-ui,sans-serif;
-  padding:8px 14px;border-radius:20px;box-shadow:0 4px 14px rgba(0,0,0,.25);
-  pointer-events:none;" role="status">Borrador · sitio de prueba</div>
-"""
-
-
-def marcar_borrador():
-    """Deja claro que este NO es el sitio real y lo esconde de Google.
-
-    Toca archivos del repositorio, así que solo corre en el servidor que
-    publica el borrador, sobre una copia recién descargada.
-    """
-    (RAIZ / "robots.txt").write_text(
-        "# Sitio de prueba: no debe aparecer en los buscadores\n"
-        "User-agent: *\nDisallow: /\n"
-    )
-    if SITEMAP.exists():
-        SITEMAP.unlink()
-
-    marcadas = 0
-    for pagina in sorted(RAIZ.glob("*.html")):
-        texto = pagina.read_text()
-        if "Borrador · sitio de prueba" in texto or "</body>" not in texto:
-            continue
-        pagina.write_text(texto.replace("</body>", DISTINTIVO + "</body>", 1))
-        marcadas += 1
-    print(f"Modo borrador: {marcadas} páginas marcadas y robots.txt en noindex")
-
-
 def main() -> int:
     if not CATEGORIAS.exists():
         print(f"ERROR: falta {CATEGORIAS}", file=sys.stderr)
@@ -288,9 +249,6 @@ def main() -> int:
             ensure_ascii=False, indent=2,
         ) + "\n"
     )
-
-    if ES_BORRADOR:
-        marcar_borrador()
 
     print(f"{len(productos)} productos y {len(categorias)} categorías -> {SALIDA.name}")
     print(f"{len(productos)} páginas de producto y sitemap.xml actualizados")

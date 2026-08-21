@@ -16,6 +16,47 @@ El sitio se ve actualizado en unos dos minutos. Puede tardar unos minutos más p
 
 > El envío por FTP a un hosting propio también está preparado en el flujo de publicación, pero **apagado**. Se enciende creando la variable `FTP_ACTIVO` con el valor `si` en Settings > Secrets and variables > Actions, junto con los secretos `FTP_SERVIDOR`, `FTP_USUARIO` y `FTP_CLAVE`. Conviene tener **un solo hosting activo**: dos copias del mismo sitio con el mismo dominio terminan mostrando versiones distintas.
 
+## Sitio de prueba (rama borrador)
+
+El sitio de prueba vive en **Cloudflare Pages**, conectado al mismo repositorio pero a la rama `borrador`. El sitio real no se entera de nada de lo que pase ahí.
+
+### Cómo se conecta (una sola vez)
+
+1. Entrar a https://dash.cloudflare.com con la cuenta de la empresa → **Workers & Pages** → **Create** → pestaña **Pages** → **Connect to Git**.
+2. Autorizar GitHub y elegir el repositorio `americancool`.
+3. Llenar la configuración con estos valores exactos:
+
+| Campo | Valor |
+|---|---|
+| Project name | `americancool-borrador` |
+| Production branch | `borrador` |
+| Framework preset | None |
+| Build command | `bash tools/build_borrador.sh` |
+| Build output directory | `_sitio` |
+
+4. **Save and Deploy**. En un par de minutos queda en `https://americancool-borrador.pages.dev`.
+
+Cloudflare trae Python incluido en su imagen de compilación, así que no hay que configurar nada más.
+
+> Por defecto Cloudflare compila **todas** las ramas, así que `main` también quedaría con una dirección de vista previa. Si no se quiere, en **Settings > Builds & deployments > Branch control** dejar solo `borrador`.
+>
+> Para que el borrador no sea público: **Settings > Access policy**, que pide correo y código para entrar (gratis hasta 50 personas).
+
+### Qué hace `tools/build_borrador.sh`
+
+Corre el mismo build del sitio real —con las mismas validaciones—, copia a `_sitio/` solo lo que el visitante necesita (nada de `tools/`, fichas del CMS ni documentación) y sobre esa copia aplica la marca de borrador: el distintivo naranja en pantalla y el `robots.txt` en `Disallow`. **El repositorio nunca se modifica**, así que no hay forma de publicar el sitio real con la marca puesta.
+
+Para verlo en la computadora:
+
+```
+bash tools/build_borrador.sh
+cd _sitio && python3 -m http.server 8000
+```
+
+### Cómo se pasa a producción
+
+Pestaña **Actions** del repositorio → **"Pasar el borrador a producción"** → **Run workflow**. Une `borrador` con `main`, publica el sitio real y deja las dos ramas iguales.
+
 ## Qué se edita desde el panel y qué no
 
 Desde **https://app.pagescms.org** (ver `CMS.md`): productos, banners del inicio y categorías.

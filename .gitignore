@@ -1,1 +1,4 @@
 .DS_Store
+
+# Sitio de prueba armado por tools/build_borrador.sh
+_sitio/
